@@ -1,0 +1,787 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="rtl:space-x-reverse">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معدل إعادة العمل العالي في اختبارات الختم؟ نظام الكشف الذكي من WAFU Brothers يحل تحديات اختبار التسرب من الجذور |
+        WAFU Brothers</title>
+    <meta name="description"
+        content="حل نقاط الألم في اختبارات الختم في التصنيع! استنادًا إلى 16 عامًا من الخبرة في الصناعة، طورت WAFU Brothers نظام اختبار تسرب ذكي مدعوم بالذكاء الاصطناعي. من خلال التغلب على قيود العتبات الثابتة التقليدية عبر التكيف الديناميكي للعتبات، ودمج بيانات المستشعرات المتعددة، وآليات التعلم الذاتي في الوقت الفعلي، يقلل النظام من معدلات الكشف الخاطئ إلى أقل من 0.3٪، مما يساعد الشركات في صناعات السيارات والطاقة الجديدة والأجهزة الطبية على القضاء تمامًا على مشاكل إعادة العمل المتكررة وتحقيق تحسينات في كل من الجودة والكفاءة.">
+    <meta name="keywords"
+        content="اختبار التسرب الهوائي، اختبار الختم، تحسين نظام الاختبار، حل الكشف الذكي، نظام اختبار التسرب، تكنولوجيا التفتيش الصناعي، التحول الرقمي في التصنيع، تقليل معدل الكشف الخاطئ، نظام التتبع الكامل للعملية، تحسين كفاءة الاختبار">
+
+    <script src="/js/tailwind.js"></script>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="/css/tailwindcss.css" rel="stylesheet">
+    <link href="/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/font.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#0F3A8C',
+                        neutral: '#F5F7FA',
+                        dark: '#1D2129',
+                        light: '#FFFFFF',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'article': '0 4px 20px rgba(0, 0, 0, 0.05)',
+                        'card-hover': '0 10px 30px rgba(0, 0, 0, 0.1)',
+                    }
+                },
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-balance {
+                text-wrap: balance;
+            }
+            .reading-progress {
+                height: 3px;
+                background-color: theme('colors.primary');
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 0%;
+                z-index: 50;
+                transition: width 0.1s ease;
+            }
+            .fade-in {
+                animation: fadeIn 0.6s ease-in-out;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .markdown-content h2 {
+                @apply text-2xl font-semibold text-dark mt-8 mb-4 scroll-mt-20;
+            }
+            .markdown-content h3 {
+                @apply text-xl font-medium text-dark mt-6 mb-3 scroll-mt-20;
+            }
+            .markdown-content p {
+                @apply text-gray-700 mb-4 leading-relaxed;
+            }
+            .markdown-content ul {
+                @apply list-disc pl-5 mb-4 space-y-2;
+            }
+            .markdown-content ol {
+                @apply list-decimal pl-5 mb-4 space-y-2;
+            }
+            .markdown-content img {
+                @apply rounded-lg shadow-md max-w-full mx-auto my-6;
+            }
+            .markdown-content blockquote {
+                @apply border-l-4 border-primary pl-4 italic text-gray-600 my-4;
+            }
+            .markdown-content code {
+                @apply bg-neutral px-1 py-0.5 rounded text-sm font-mono;
+            }
+        }
+    </style>
+
+    <!-- 多语言声明 -->
+    <link rel="alternate" hreflang="zh-CN" href="https://www.wafubrother.cn/index.html" />
+    <link rel="alternate" hreflang="en" href="https://www.wafubrother.com/index.html" />
+    <link rel="alternate" hreflang="vi" href="https://www.wafuvn.com/index.html" />
+    <link rel="alternate" hreflang="th" href="https://www.wafuth.com/index.html" />
+</head>
+
+<body class="font-inter text-gray-800 bg-white">
+    <header id="navbar" class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-35 md:h-30">
+                <!-- Brand Logo -->
+                <a href="/index.html" class="flex items-center" aria-label="Wafu Brothers Homepage">
+                    <img src="/images/logo-inverse.png" alt="WaFu Brothers" class="h-35 md:h-30 object-cover">WAFU
+                </a>
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-1 md:space-x-8 rtl:space-x-reverse">
+                    <a href="/index.html"
+                        class="text-primary font-medium hover:text-secondary transition-colors px-2 py-1">الرئيسية</a>
+
+                    <!-- Product Center Dropdown -->
+                    <div class="relative group">
+                        <a href="/products.html"
+                            class="text-gray-800 font-medium hover:text-primary transition-colors flex items-center tracking-wide px-2 py-1">
+                            المنتجات <i
+                                class="fa fa-angle-down ml-1 text-xs transition-transform group-hover:rotate-180 duration-300"></i>
+                        </a>
+                        <!-- Optimized Dropdown -->
+                        <div
+                            class="absolute left-0 mt-1 w-64 rounded-lg shadow-xl bg-white ring-1 ring-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+                                    transition-all duration-300 z-50 transform origin-top scale-95 group-hover:scale-100">
+                            <div class="py-2">
+                                <a href="/products.html#Leak_detector"
+                                    class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">المجموعة الكاملة من كاشفات التسرب</a>
+                                <a href="/products.html#Non-standard"
+                                    class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">
+                                    كاشف تسرب مخصص غير قياسي</a>
+                                <a href="/products.html#Tooling"
+                                    class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">تركيبات وأدوات كشف التسرب</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solutions Dropdown -->
+                    <div class="relative group">
+                        <a href="/application.html"
+                            class="text-gray-800 font-medium hover:text-primary transition-colors flex items-center tracking-wide px-2 py-1">
+                            حالات التطبيق <i
+                                class="fa fa-angle-down ml-1 text-xs transition-transform group-hover:rotate-180 duration-300"></i>
+                        </a>
+                        <div
+                            class="absolute left-0 mt-1 w-64 rounded-lg shadow-xl bg-white ring-1 ring-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+                                    transition-all duration-300 z-50 transform origin-top scale-95 group-hover:scale-100">
+                            <div class="py-2">
+                                <a href="solu/solu-carparts.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة قطع السيارات</a>
+                                <a href="solu/solu-aerospace.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة الطيران والفضاء</a>
+                                <a href="solu/solu-medical.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة الأجهزة الطبية</a>
+                                <a href="solu/solu-battery.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة البطاريات</a>
+                                <a href="solu/solu-food.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة التعبئة والتغليف</a>
+                                <a href="solu/solu-kitchen.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة الأجهزة المنزلية</a>
+                                <a href="solu/solu-electronic.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة الإلكترونيات</a>
+                                <a href="solu/solu-pipeline.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة خطوط الأنابيب</a>
+                                <a href="solu/solu-hardware.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">الأجهزة والصبات</a>
+                                <a href="solu/solu-lighting.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">الأمن والإضاءة</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="/about.html"
+                        class="text-gray-800 font-medium hover:text-primary transition-colors tracking-wide px-2 py-1">معلومات عنا</a>
+
+                    <!-- Service Support Dropdown -->
+                    <div class="relative group">
+                        <a href="/services.html"
+                            class="text-gray-800 font-medium hover:text-primary transition-colors flex items-center tracking-wide px-2 py-1">
+                            الخدمة والدعم <i
+                                class="fa fa-angle-down ml-1 text-xs transition-transform group-hover:rotate-180 duration-300"></i>
+                        </a>
+                        <div
+                            class="absolute left-0 mt-1 w-64 rounded-lg shadow-xl bg-white ring-1 ring-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+                                    transition-all duration-300 z-50 transform origin-top scale-95 group-hover:scale-100">
+                            <div class="py-2">
+                                <a href="/resource.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">مركز الموارد</a>
+                                <a href="/Allquestions.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">الأسئلة الشائعة</a>
+                                <a href="/test-case.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صور الحالات</a>
+                                <a href="/digital.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">فيديوهات الحالات</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Language Selector -->
+                    <div class="relative group">
+                        <button
+                            class="flex items-center text-gray-800 font-medium hover:text-primary transition-colors px-2 py-1">
+                            اللغة <i
+                                class="fa fa-angle-down ml-1 text-xs transition-transform group-hover:rotate-180 duration-300"></i>
+                        </button>
+                        <div
+                            class="absolute mt-1 w-40 bg-white shadow-lg rounded-md ring-1 ring-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <a href="https://www.wafubrother.com/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">🇺🇸
+                                English</a>
+                            <a href="https://www.wafubrother.cn/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">🇨🇳
+                                中文</a>
+                            <a href="https://www.wafuvn.com/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">🇻🇳
+                                Tiếng Việt</a>
+                            <a href="https://www.wafuth.com/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">🇹🇭
+                                ไทย</a>
+                            <a href="https://www.wafuar.com/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">
+                                العربية 🇸🇦</a>
+                        </div>
+                    </div>
+                    <a href="/contact.html"
+                        class="bg-primary hover:bg-secondary text-white font-medium py-2 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        اتصل بنا
+                    </a>
+
+
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-800 hover:text-primary focus:outline-none p-2">
+                    <i class="fa fa-bars text-xl transition-transform duration-300"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100 shadow-lg">
+            <div class="container mx-auto px-4 py-3">
+                <nav class="flex flex-col space-y-1 py-2">
+                    <a href="/index.html"
+                        class="block py-3 px-4 text-primary font-medium hover:bg-gray-50 rounded-md transition-colors">الرئيسية</a>
+
+                    <!-- Product Dropdown Mobile -->
+                    <div class="mobile-dropdown">
+                        <button
+                            class="w-full flex justify-between items-center text-gray-800 font-medium hover:text-primary py-3 px-4 w-full text-left focus:outline-none">
+                            المنتجات <i class="fa fa-plus text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div class="mobile-dropdown-content hidden pl-6 mt-0 border-l-2 border-gray-100">
+                            <a href="/products.html#Leak_detector"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">كاشف التسرب</a>
+                            <a href="/products.html#Non-standard"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">
+                                كاشف تسرب مخصص غير قياسي</a>
+                            <a href="/products.html#Tooling"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">تركيبات وأدوات كشف التسرب</a>
+                        </div>
+                    </div>
+
+                    <!-- Application Case Mobile -->
+                    <div class="mobile-dropdown">
+                        <button
+                            class="w-full flex justify-between items-center text-gray-800 font-medium hover:text-primary py-3 px-4 w-full text-left focus:outline-none">
+                            حالات التطبيق <i class="fa fa-plus text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div class="mobile-dropdown-content hidden pl-6 mt-0 border-l-2 border-gray-100">
+                            <a href="solu/solu-carparts.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة قطع السيارات</a>
+                            <a href="solu/solu-aerospace.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة الطيران والفضاء</a>
+                            <a href="solu/solu-medical.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة الأجهزة الطبية</a>
+                            <a href="solu/solu-battery.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة البطاريات</a>
+                            <a href="solu/solu-food.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة التعبئة والتغليف</a>
+                            <a href="solu/solu-kitchen.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة الأجهزة المنزلية</a>
+                            <a href="solu/solu-electronic.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة الإلكترونيات</a>
+                            <a href="solu/solu-pipeline.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة خطوط الأنابيب</a>
+                            <a href="solu/solu-hardware.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">الأجهزة والصبات</a>
+                            <a href="solu/solu-lighting.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">الأمن والإضاءة</a>
+                        </div>
+                    </div>
+
+                    <a href="/about.html"
+                        class="block py-3 px-4 text-gray-800 hover:text-primary hover:bg-gray-50 rounded-md transition-colors">معلومات عنا</a>
+
+                    <!-- Service Support Mobile -->
+                    <div class="mobile-dropdown">
+                        <button
+                            class="w-full flex justify-between items-center text-gray-800 font-medium hover:text-primary py-3 px-4 w-full text-left focus:outline-none">
+                            الخدمة والدعم <i class="fa fa-plus text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div class="mobile-dropdown-content hidden pl-6 mt-0 border-l-2 border-gray-100">
+                            <a href="/solu/solu-carparts.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">مركز الموارد</a>
+                            <a href="/solu/solu-medical.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">الأسئلة الشائعة</a>
+                            <a href="/solu/solu-battery.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">المقالات التقنية</a>
+                        </div>
+                    </div>
+                    <!-- Mobile Language Selector -->
+                    <div class="mobile-dropdown">
+                        <button
+                            class="w-full flex justify-between items-center text-gray-800 font-medium hover:text-primary py-3 px-4 w-full text-left focus:outline-none">
+                            اللغة <i class="fa fa-plus text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div class="mobile-dropdown-content hidden pl-6 mt-0 border-l-2 border-gray-100">
+                            <a href="https://www.wafubrother.com/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">🇺🇸
+                                English</a>
+                            <a href="https://www.wafubrother.cn/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">🇨🇳
+                                中文</a>
+                            <a href="https://www.wafuvn.com/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">🇻🇳
+                                Tiếng Việt</a>
+                            <a href="https://www.wafuth.com/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">🇹🇭
+                                ไทย</a>
+                            <a href="https://www.wafuar.com/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">
+                                العربية 🇸🇦</a>
+                        </div>
+                    </div>
+                    <a href="/contact.html"
+                        class="block py-3 px-4 mt-2 text-center bg-primary text-white rounded-md hover:bg-secondary transition-colors">اتصل بنا</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        <nav class="text-sm text-gray-500 mb-6">
+            <ol class="flex flex-wrap items-center">
+                <li><a href="/" class="hover:text-primary transition-colors duration-200">الرئيسية</a></li>
+                <li class="mx-2"><i class="fa fa-angle-right text-xs"></i></li>
+                <li><a href="/services.html" class="hover:text-primary transition-colors duration-200">مركز الدعم</a></li>
+                <li class="mx-2"><i class="fa fa-angle-right text-xs"></i></li>
+                <li><a href="/resource.html" class="hover:text-primary transition-colors duration-200">المقالات التقنية</a></li>
+                <li class="mx-2"><i class="fa fa-angle-right text-xs"></i></li>
+                <!-- 面包屑标题 -->
+                <li class="text-gray-700">
+                    إعادة العمل المتكررة في اختبارات الختم؟ السبب الجذري يكمن في نظام الاختبار!
+                    WAFU Brothers يعلمونك كيفية حلها بشكل منهجي
+                </li>
+                          
+            </ol>
+        </nav>
+
+
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- 文章 -->
+            <article class="w-full lg:w-2/3 bg-white rounded-xl shadow-article p-6 md:p-8 fade-in">
+                <header class="mb-8">
+                    <h1 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-dark leading-tight text-balance mb-4">
+                        إعادة العمل المتكرر في اختبارات الختم؟ السبب الجذري يكمن في نظام الاختبار! WAFU Brothers يعلمونك كيفية حله بشكل منهجي
+                    </h1>
+                    <div class="flex flex-wrap items-center text-sm text-gray-500 space-x-4">
+                        <span><i class="fa fa-calendar-o mr-1"></i> 14 يوليو 2025</span>
+                        <span><i class="fa fa-user-o mr-1"></i> WaFubrother</span>
+                        <span><i class="fa fa-tag mr-1"></i> معدات اختبار الإحكام، معدات الضغط المباشر، معدات الضغط التفاضلي، معدات اختبار التدفق</span>
+                    </div>
+                </header>
+                <div class="markdown-content">
+                    <p>في صناعة التصنيع، يعتبر إعادة العمل الناتجة عن اختبارات الختم مثل "مرض مزمن" عنيد—لا يضر فقط بأرباح الشركة بل يؤثر أيضاً على سمعة المنتج في السوق. وفقاً لإحصاءات <strong>شركة تصنيع قطع غيار سيارات معينة في نينغبو</strong>، وصل معدل إعادة العمل في اختبار الختم لديهم في عام 2023 إلى 8.7٪، مما زاد التكاليف السنوية للإنتاج بمقدار 4.2 مليون يوان صيني، أي 35٪ من إجمالي نفقات التفتيش على الجودة. ومع ذلك، فإن معظم الشركات تنسب سبب إعادة العمل ببساطة إلى عيوب عملية المنتج، متجاهلة المشكلات المحتملة داخل نظام الاختبار نفسه.</p>
+                    <p>مع خبرة 15 عامًا في اختبارات الختم، قامت WAFU Brothers بتحليل أكثر من 300 حالة حقيقية من شركات مثل <strong>Foxconn و Mindray و CATL</strong>. وأظهرت النتائج أن <strong>حوالي 80٪ من حالات إعادة العمل المتكررة في اختبارات الختم تنشأ عن اختيار معدات غير مناسب، أو تصميم عملية غير منطقي، أو ثغرات في تتبع البيانات</strong>. ستقوم هذه المقالة بتحليل المشاكل الأساسية في نظام الاختبار التي تؤدي إلى إعادة العمل وتقديم حلول منهجية من WAFU Brothers.</p>
+                    
+                    <h2>أولاً: عدم التوافق بين المعدات والسيناريو: فخ "الفشل الوهمي"</h2>
+                    <h3>1. التكيف البيئي غير الكافي: الأخطاء الناتجة عن تقلبات درجة الحرارة</h3>
+                    <p>دقة معدات اختبار الختم التقليدية تتأثر بشكل كبير بالعوامل البيئية. في <strong>مصنع هواتف ذكية OEM في شنتشن</strong>، يمكن أن تصل درجة حرارة الورشة إلى 38°C بعد الظهر في الصيف، أي أعلى بـ 13°C من بيئة الاختبار القياسية 25°C. في هذه الظروف، ارتفع معدل خطأ أجهزة الضغط المباشر العادية بنسبة 22٪، مما أدى مرة إلى إعادة عمل 500 غلاف هاتف ذكي في يوم واحد بسبب اكتشاف "تسرب وهمي".</p>
+                    <p>أجهزة الاختبار الذكية من WAFU Brothers، مثل سلسلة DPS-9000، مجهزة بأنظمة التكيف البيئي. باستخدام حساسات درجة الحرارة والرطوبة SHT30 ووحدات ضغط الهواء MPX5100، يجمع النظام 50 مجموعة بيانات بيئية في الثانية ويستخدم خوارزميات التعويض الديناميكي لتصحيح قيم الاختبار في الوقت الفعلي. بعد اعتماد هذا النظام، خفض المصنع معدل إعادة العمل المتعلق بالبيئة من 12٪ إلى 1.5٪.</p>
+                    
+                    <h3>2. إعدادات المعلمات الصارمة: المخاطر المزدوجة لاختبارات "مقاس واحد يناسب الجميع"</h3>
+                    <p>تختلف متطلبات الختم بشكل كبير بين المنتجات. على سبيل المثال، تتطلب حزم بطاريات مركبات الطاقة الجديدة ضغط اختبار 0.3 ميغاباسكال، بينما تحتاج الساعات الذكية إلى 0.02 ميغاباسكال فقط. <strong>شركة أجهزة قابلة للارتداء في هويتشو</strong> استخدمت نفس المعلمات لجميع المنتجات، مما أدى إلى تشوه حواشي الختم في 3,000 نموذج عالي الجودة (معدل إعادة العمل 15٪) و2,000 نموذج منخفض المستوى لم يتم اختباره بالشكل الكافي (مما أدى إلى 127 شكوى من العملاء).</p>
+                    <p>يشمل نظام الاختبار المعياري من WAFU Brothers مكتبة تضم أكثر من 100 معلمة صناعية، مما يسمح للمشغلين بمسح رمز لاختيار المخطط الصحيح للاختبار. بعد التطبيق، انخفض معدل إعادة العمل المرتبط بالمعلمات بنسبة 80٪، وزادت كفاءة الاختبار بنسبة 40٪.</p>
+                    
+                    <h3>3. تقادم المعدات: التكلفة المخفية للأجهزة غير المعايرة</h3>
+                    <p>تفقد المكونات الأساسية لمعدات اختبار الختم حوالي 2٪ من دقتها سنويًا. <strong>شركة أجهزة طبية في سوتشو</strong> استخدمت جهاز اختبار من نوع التدفق لمدة ثلاث سنوات دون معايرة. نتيجة لذلك، تم تصنيف مجموعات التسريب بمعدل 0.0012 مل/دقيقة خطأً على أنها "معيبة"، مما تسبب في إعادة العمل على 5,000 منتج، مع خسائر تجاوزت 100,000 يوان صيني.</p>
+                    <p>يتيح نظام إدارة المعدات من WAFU Brothers مراقبة تدهور المكونات تلقائيًا وإنشاء أوامر معايرة مسبقة. بعد الاعتماد، خفضت الشركة إعادة العمل الناتجة عن مشاكل الدقة بنسبة 90٪، موفرة 680,000 يوان سنويًا.</p>
+                    
+                    <h2>ثانياً: نقاط انقطاع العملية: دورة "أسباب إعادة العمل المجهولة"</h2>
+                    <h3>1. نقص تتبع البيانات: عدم كفاءة التسجيل اليدوي</h3>
+                    <p><strong>شركة تصنيع أسلاك السيارات في تشانغتشون</strong> أعادت العمل على 3,000 سلك في أكتوبر 2022 بسبب فشل الختم. وبسبب فقدان سجلات البيانات، قضت إدارات مراقبة الجودة والإنتاج 3 أيام في الجدال قبل اكتشاف أن انحراف 0.05 مم في حجم حلقة الختم كان السبب الجذري. خلال هذا الوقت، تم إعادة العمل على المنتجات أربع مرات، مما أسفر عن خسائر بقيمة 280,000 يوان.</p>
+                    <p>يمكن للنظام الرقمي من WAFU Brothers جمع البيانات تلقائيًا لكل عملية ومنح كل منتج "معرف اختبار" فريد. بعد تطبيق هذا النظام في 2023، تمكن المصنع من تحديد سبب المشاكل المشابهة خلال 20 دقيقة فقط عن طريق مسح الرمز، مانعًا ثلاث جولات من إعادة العمل غير الضرورية.</p>
+                    
+                    <h3>2. معايير الحكم الغامضة: تكلفة الخبرة الذاتية</h3>
+                    <p><strong>شركة أجهزة منزلية في تشينغداو</strong> أبلغت عن معدل نزاع 35٪ في اختبار خزانات سخانات المياه في 2022 بسبب تفاوت 30٪ في معايير تقدير المشغلين، مما أدى إلى تأخير تسليم 400 منتج شهريًا بسبب "المراجعات الثانوية".</p>
+                    <p>قدمت WAFU Brothers خوارزميات الذكاء الاصطناعي لبناء نماذج موضوعية تميز تلقائيًا بين "التسريبات الحقيقية" و"الإنذارات الكاذبة". ونتيجة لذلك، ارتفعت نسبة التوافق في الحكم من 60٪ إلى 98٪، ووصل معدل التسليم في الوقت المحدد إلى 95٪.</p>
+                    
+                    <h2>ثالثاً: التشغيل البشري وتنسيق النظام: سد ثغرات الأخطاء البشرية</h2>
+                    <h3>1. التدريب غير الكافي: معدلات إعادة العمل المرتفعة بين الموظفين الجدد</h3>
+                    <p><strong>مصنع أسلاك السيارات في تيانجين</strong> أبلغ عن أن الموظفين الجدد الذين لم يتقنوا معايير نظافة الأدوات تسببوا في معدل إعادة عمل 18٪ في بعض دفعات الموصلات، بينما كان معدل الموظفين المتمرسين 3٪ فقط.</p>
+                    <p>طبقت WAFU Brothers نظام تدريب "نظرية + عملي + محاكاة VR"، يعكس أكثر من 20 سيناريو لأخطاء شائعة. بعد التطبيق، انخفض معدل إعادة العمل للموظفين الجدد إلى 6.3٪ في الشهر الأول، وتم تقليص وقت التدريب بمقدار 5 أيام.</p>
+                    
+                    <h3>2. المسؤوليات غير المحددة: تكلفة الوقت في تحويل اللوم بين الأقسام</h3>
+                    <p><strong>مصنع بطاريات الطاقة الجديدة في Hefei</strong> واجه فشل الختم في حزم البطاريات في 2022. دخلت إدارات الإنتاج ومراقبة الجودة في حالة جمود لمدة 48 ساعة قبل اكتشاف أن السبب هو تآكل الأدوات. كلفهم وقت التوقف 500,000 يوان في ساعتين فقط.</p>
+                    <p>يحدد نظام مصفوفة المسؤولية من WAFU Brothers المسؤوليات بوضوح: إذا كانت البيانات مؤهلة لكن حدث تسرب، يكون قسم QC مسؤولًا؛ إذا لم يتم التعامل مع البيانات غير الطبيعية، تكون مسؤولية قسم الإنتاج. بعد التطبيق، انخفض وقت استجابة إعادة العمل من 4 ساعات إلى ساعة واحدة فقط.</p>
+                    
+                    <h3>3. نقص آليات الطوارئ: تأثير الدومينو للفشل غير المتوقع</h3>
+                    <p><strong>مصنع هواتف OEM في Zhengzhou</strong> تحول إلى اختبار المياه بسبب فشل المعدات في 2022، مما أدى إلى تلف 300 لوحة أم للهاتف وخسائر بقيمة 210,000 يوان.</p>
+                    <p>يغطي "دليل الطوارئ لاختبار الختم" من WAFU Brothers عمليات الاستجابة لسبعة أنواع من السيناريوهات. بعد اعتماده، أثرت الحوادث المماثلة على 200 منتج فقط، وتم تحويلها إلى المعدات الاحتياطية دون خسائر إضافية.</p>
+                    
+                    <h2>رابعاً: حلول ترقية نظام اختبار WAFU Brothers</h2>
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-blue-50">
+                            <tr>
+                                <th>مستوى الحل</th>
+                                <th>حجم المؤسسة المناسب</th>
+                                <th>الإجراءات الأساسية</th>
+                                <th>النتائج النموذجية</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap font-medium">الإصدار الأساسي</td>
+                                <td>أقل من 100 موظف</td>
+                                <td>معايرة المعدات + توحيد المعلمات + تدريب المشغل</td>
+                                <td>خفض مصنع بلاستيك في Zhongshan معدل إعادة العمل من 15٪ إلى 3٪، موفرًا 250,000 يوان سنويًا</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap font-medium">الإصدار المتقدم</td>
+                                <td>100-500 موظف</td>
+                                <td>تتبع رقمي + تحليل أسباب إعادة العمل + آلية تحسين مستمرة</td>
+                                <td>خفضت شركة قطع غيار السيارات في Wuhan إعادة العمل على الدفعات بنسبة 65٪، موفرة 4.2 مليون يوان سنويًا</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap font-medium">الإصدار المتميز</td>
+                                <td>أكثر من 500 موظف</td>
+                                <td>الصيانة التنبؤية بالذكاء الاصطناعي + التعاون في سلسلة الإمداد + التنبيهات الذكية</td>
+                                <td>حافظت شركة الطيران في Shanghai على معدلات إعادة العمل أقل من 0.5٪، مؤمنة 12 مليون يوان إضافية في الطلبات</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>الخلاصة: تحويل أنظمة الاختبار إلى محركات لتقليل التكاليف</h2>
+                    <p class="highlight">يكمن السبب الجذري لإعادة العمل المتكرر في اختبارات الختم في ثغرات النظام. تظهر خبرة WAFU Brothers أنه من خلال نهج ثلاثي الأبعاد—ترقية المعدات، تحسين العمليات، وتمكين الأفراد—يمكن للشركات خفض معدلات إعادة العمل إلى أقل من 1٪.</p>
+                </div>
+                <footer class="mt-12 pt-8 border-t border-gray-100">
+                    <div class="flex flex-wrap justify-between items-center mb-8">
+                        <div class="flex items-center space-x-4">
+                            <span class="text-sm text-gray-500">شارك هذه المقالة:</span>
+                            <a href="https://service.weibo.com/share/share.php?url=https://your-article-url.com&title=This article is worth reading"
+                                target="_blank" rel="noopener noreferrer" aria-label="Share on Weibo"
+                                class="w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center hover:bg-red-600 transition-colors duration-200">
+                                <i class="fa fa-weibo"></i>
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://your-article-url.com"
+                                target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"
+                                class="w-8 h-8 rounded-full bg-blue-700 text-white flex items-center justify-center hover:bg-blue-800 transition-colors duration-200">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="mailto:?subject=Recommended Reading: Great Article&body=I found this article very valuable, check it out:%0Ahttps://your-article-url.com"
+                                aria-label="Send via Email"
+                                class="w-8 h-8 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-900 transition-colors duration-200">
+                                <i class="fa fa-envelope-o"></i>
+                            </a>
+                        </div>
+                    </div>
+            
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <span class="px-4 py-2 bg-neutral rounded-full text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">اختبار الإحكام</span>
+                        <span class="px-4 py-2 bg-neutral rounded-full text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">تكنولوجيا الحساسات</span>
+                        <span class="px-4 py-2 bg-neutral rounded-full text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">تقنيات التفتيش الصناعي</span>
+                        <span class="px-4 py-2 bg-neutral rounded-full text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">خوارزميات تعويض البيانات</span>
+                    </div>
+            
+                    <div class="flex flex-col sm:flex-row justify-between gap-6 mt-10">
+                        <a href="./T-art-6.html"
+                            class="flex items-center space-x-3 text-gray-700 hover:text-primary transition-colors duration-200">
+                            <i class="fa fa-angle-left"></i>
+                            <div>
+                                <p class="text-sm text-gray-500">المقال السابق</p>
+                                <p class="font-medium">كيفية اختيار جهاز اختبار الإحكام؟ WAFU Brothers يشرحون مبادئ اختبار الضغط المباشر / التفاضلي / التدفق بالتفصيل</p>
+                            </div>
+                        </a>
+                        <a href="T-art-8.html"
+                            class="flex items-center space-x-3 text-gray-700 hover:text-primary transition-colors duration-200 justify-end">
+                            <div class="text-right">
+                                <p class="text-sm text-gray-500">المقال التالي</p>
+                                <p class="font-medium">WAFU Brothers يقودون عصر الاختبارات الذكية بالذكاء الاصطناعي: حلول اختبار الإحكام بكفاءة ودقة</p>
+                            </div>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </footer>
+            </article>
+            
+            
+    
+            
+
+            
+            <aside class="w-full lg:w-1/3 space-y-8">
+                <div class="bg-white rounded-xl shadow-article p-6 fade-in">
+                    <h3 class="text-lg font-semibold text-dark mb-4">عن WAFU</h3>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <img src="../images/we.jpg" alt="WAFU Brothers" class="w-16 h-16 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-medium text-dark">إخوة WAFU</h4>
+                            <p class="text-sm text-gray-500">خبراء في اختبار الإحكام</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm mb-4">
+                        مع أكثر من 10 سنوات من الخبرة في تكنولوجيا اختبار الإحكام، نحن متخصصون في تطوير وتطبيق معدات اختبار التسرب عالية الدقة، مع خبرة واسعة في المشاريع في قطع السيارات، والطاقة الجديدة، والأجهزة الطبية، والمزيد.
+                    </p>
+                    <a href="../resource.html"
+                        class="text-primary hover:text-primary/80 text-sm font-medium transition-colors duration-200">عرض
+                        المزيد من المقالات</a>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-article p-6 fade-in" style="animation-delay: 0.1s">
+                    <h3 class="text-lg font-semibold text-dark mb-4">مقالات ذات صلة</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3">
+                            <img src="../images/solu/car/solu car2.jpg" alt="Article thumbnail: Engine Airtightness"
+                                class="w-20 h-16 rounded-lg object-cover">
+                            <div>
+                                <a href="../solulist/hood-assembly.html"
+                                    class="font-medium text-dark hover:text-primary transition-colors duration-200 line-clamp-2">اختبار
+                                    الإحكام لمقاومة الماء للمحرك والحلول</a>
+                                <p class="text-xs text-gray-500 mt-1">2025-05-28</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <img src="../images/services/faq/faq_4.jpg" alt="WAFU engineer"
+                                class="w-20 h-16 rounded-lg object-cover">
+                            <div>
+                                <a href="./T-art-7.html"
+                                    class="font-medium text-dark hover:text-primary transition-colors duration-200 line-clamp-2">إعادة
+                                    العمل المتكررة في اختبارات التسكير؟ قد يكون الجذر في نظام الكشف نفسه</a>
+                                <p class="text-xs text-gray-500 mt-1">2025-05-15</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <img src="../images/solu/battery/battery3-1070x635.jpg" alt="Battery Airtightness Testing"
+                                class="w-20 h-16 rounded-lg object-cover">
+                            <div>
+                                <a href="../solulist/nca-battery.html"
+                                    class="font-medium text-dark hover:text-primary transition-colors duration-200 line-clamp-2">اختبار
+                                    الإحكام لمقاومة الماء لبطاريات الطاقة الجديدة</a>
+                                <p class="text-xs text-gray-500 mt-1">2025-04-30</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Popular Tags -->
+                <div class="bg-white rounded-xl shadow-article p-6 fade-in" style="animation-delay: 0.2s">
+                    <h3 class="text-lg font-semibold text-dark mb-4">الكلمات الشائعة</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">جهاز
+                            اختبار الإحكام</span>
+                        <span
+                            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">مستشعرات
+                            صناعية</span>
+                        <span
+                            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">طريقة
+                            انخفاض الضغط</span>
+                        <span
+                            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">طريقة
+                            الضغط التفاضلي</span>
+                        <span
+                            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">الاختبار
+                            الآلي</span>
+                        <span
+                            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">مركبات
+                            الطاقة الجديدة</span>
+                        <span
+                            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">الاختبار
+                            غير التدميري</span>
+                        <span
+                            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">التعويض
+                            الحراري</span>
+                        <span
+                            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">معدات
+                            الاختبار الصناعي</span>
+                        <span
+                            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">تكنولوجيا
+                            مقاومة التداخل</span>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="bg-gradient-to-br from-primary to-secondary text-white rounded-xl shadow-article p-6 fade-in"
+                    style="animation-delay: 0.3s">
+                    <h3 class="text-lg font-semibold mb-4">هل تحتاج إلى استشارة خبير؟</h3>
+                    <p class="mb-6 text-white/90">
+                        خبراؤنا الفنيون دائمًا على استعداد لتقديم حلول اختبار الإحكام لك ومساعدتك في اختيار معدات الاختبار الأنسب.
+                    </p>
+                    <a href="../contact.html"
+                        class="block w-full py-3 bg-white text-primary rounded-lg text-center font-medium hover:bg-gray-100 transition-colors duration-200">
+                        اتصل بنا الآن
+                    </a>
+                    <div class="flex items-center justify-between mt-4 text-white/80 text-sm">
+                        <span><i class="fa fa-phone mr-1"></i>+86 17376311087</span>
+                        <span><i class="fa fa-envelope-o mr-1"></i>wafubrother@outlook.com</span>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+    
+    <footer class="bg-white border-t border-gray-200 text-gray-800 pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="lg:col-span-4">
+                    <div class="flex items-center mb-6">
+                        <span class="text-2xl font-semibold text-primary tracking-tight">WaFu<span
+                                class="text-dark">Brothers</span></span>
+                    </div>
+                    <p class="text-gray-600 mb-6 text-balance max-w-md">
+                        شركة WAFU Brothers (شنتشن) للتكنولوجيا الآلية المحدودة، التي تأسست في عام 2009، تخدم أكثر من 8000 عميل محلي ودولي بما في ذلك أودي. كشركة رائدة عالميًا في تصنيع أجهزة اختبار التسرب وتقديم الحلول، فقد تراكم لديها 16 عامًا من الخبرة في الأتمتة غير القياسية والكشف عن الإحكام. بروح الابتكار والجرأة في تحقيق الاختراقات، نوجه العملاء بتصاميم متقدمة ونقدم حلول منتجات ذات قدرة تنافسية دولية.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <!-- Weibo -->
+                        <a href="https://weibo.com/u/7907943947"
+                            class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-[#E6162D] hover:text-white transition-all duration-300"
+                            aria-label="Weibo">
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                        <!-- YouTube -->
+                        <a href="https://www.youtube.com/@leaktesters"
+                            class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-[#FF0000] hover:text-white transition-all duration-300"
+                            aria-label="YouTube">
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/wafu_airleak"
+                            class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-[#E1306C] hover:text-white transition-all duration-300"
+                            aria-label="Instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://x.com/wafu_Airleak"
+                            class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-black hover:text-white transition-all duration-300"
+                            aria-label="Twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="lg:col-span-2">
+                    <h3 class="font-semibold text-lg mb-6 text-dark flex items-center">
+                        <i class="fa fa-link text-primary mr-2"></i>روابط سريعة
+                    </h3>
+                    <ul class="space-y-3">
+                        <li><a href="/index.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group">
+                                <i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs transform group-hover:translate-x-1 transition-transform"></i>الرئيسية</a>
+                        </li>
+                        <li><a href="/products.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group">
+                                <i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs transform group-hover:translate-x-1 transition-transform"></i>المنتجات</a>
+                        </li>
+                        <li><a href="/application.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group">
+                                <i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs transform group-hover:translate-x-1 transition-transform"></i>حالات التطبيق</a></li>
+                        <li><a href="/about.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group">
+                                <i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs transform group-hover:translate-x-1 transition-transform"></i>معلومات عنا</a></li>
+                        <li><a href="/services.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group">
+                                <i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs transform group-hover:translate-x-1 transition-transform"></i>الدعم</a>
+                        </li>
+                        <li><a href="/contact.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group">
+                                <i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs transform group-hover:translate-x-1 transition-transform"></i>اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <!-- Product Categories -->
+                <div class="lg:col-span-3">
+                    <h3 class="font-semibold text-lg mb-6 text-dark flex items-center">
+                        <i class="fa fa-cube text-primary mr-2"></i>فئات المنتجات
+                    </h3>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-4">
+                        <li><a href="/products/product-one.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>جهاز اختبار التسرب متعدد الوظائف</a></li>
+                        <li><a href="/products/product-two.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>جهاز اختبار التسرب متعدد القنوات</a></li>
+                        <li><a href="/products/product-three.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>جهاز اختبار التسرب بتدفق HF</a></li>
+                        <li><a href="/products/product-four.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>جهاز اختبار التسرب بفرق الضغط</a></li>
+                        <li><a href="/products/product-five.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>جهاز اختبار التسرب بالضغط المباشر</a></li>
+                        <li><a href="/products/product-six.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>تركيبات الإحكام المكتبية</a></li>
+                        <li><a href="/products/product-seven.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>جهاز اختبار التسرب الخزفي</a></li>
+                        <li><a href="/products/product-eight.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>التركيبات الخزفية</a></li>
+                        <li><a href="/products/product-nine.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>جهاز اختبار التسرب المخصص</a></li>
+                        <li><a href="/products/leak-tester-allinone.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>نظام اختبار التسرب الكل في واحد</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="lg:col-span-3">
+                    <h3 class="font-semibold text-lg mb-6 text-dark flex items-center">
+                        <i class="fa fa-map-marker text-primary mr-2"></i>معلومات الاتصال
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start"><i
+                                class="fa fa-map-marker text-primary mt-1 mr-3 w-4 text-center"></i><span
+                                class="text-gray-600">الطابق الثاني، مبنى 6، حديقة Shayi Environmental الصناعية، رقم 496 طريق Chuangcheng، شارع Shajing، منطقة Bao'an، شنتشن</span></li>
+                        <li class="flex items-start"><i
+                                class="fa fa-phone text-primary mt-1 mr-3 w-4 text-center"></i><span
+                                class="text-gray-600">+86 17376311087</span></li>
+                        <li class="flex items-start"><i
+                                class="fa fa-envelope text-primary mt-1 mr-3 w-4 text-center"></i><span
+                                class="text-gray-600">wafubrother@outlook.com</span></li>
+                        <li class="flex items-start"><i
+                                class="fa fa-clock-o text-primary mt-1 mr-3 w-4 text-center"></i><span
+                                class="text-gray-600">من الاثنين إلى الجمعة: 9:00 - 18:00</span></li>
+                    </ul>
+                    <br />
+                    <h3 class="font-semibold text-lg mb-4 text-dark flex items-center">
+                        <i class="fa fa-handshake-o text-primary mr-2"></i>روابط صديقة
+                    </h3>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://www.west.cn/" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-md text-sm transition-colors">
+                            <i class="fa fa-external-link mr-1.5 text-xs"></i>West.cn
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-200 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                        &copy; 2025 شركة WAFU Brothers (شنتشن) للتكنولوجيا الآلية المحدودة. جميع الحقوق محفوظة.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+                        <a href="/sitemap.html"
+                            class="text-gray-500 hover:text-primary text-sm transition-colors">خريطة الموقع</a>
+                        <a href="/contact.html"
+                            class="text-gray-500 hover:text-primary text-sm transition-colors">الدعم الفني</a>
+                        <a href="/faq/dual-channel-10inch-kunlun-screen-leak-tester-manual.pdf"
+                            class="text-gray-500 hover:text-primary text-sm transition-colors">دليل المستخدم</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top"
+        class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:bg-primary/90">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+    <script src="/js/tailwind.config.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+<script src="/js/ar.js"></script>
+</html>

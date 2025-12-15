@@ -1,0 +1,786 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="rtl:space-x-reverse">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كيفية اختيار أفضل جهاز اختبار التسرب | دليل شراء جهاز اختبار إحكام الإغلاق مع 5 عوامل أساسية</title>
+    <meta name="description"
+        content="هل تبحث عن أفضل جهاز اختبار تسرب أو جهاز اختبار إحكام الإغلاق؟ يقدّم لك هذا الدليل الشامل خمسة عوامل أساسية يجب أخذها في الاعتبار لتجنب الأخطاء المكلفة وضمان دقة اكتشاف التسرب، واختبار مقاومة الماء، والتحكم الموثوق بالجودة.">
+    <meta name="keywords"
+        content="أفضل جهاز اختبار تسرب، دليل شراء جهاز اختبار إحكام الإغلاق، جهاز اختبار مقاومة الماء، كشف التسرب، اختبار IP67 IP68، الاختبار غير التدميري، اختيار المعدات">
+
+
+
+    <script src="/js/tailwind.js"></script>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="/css/tailwindcss.css" rel="stylesheet">
+    <link href="/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/font.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#0F3A8C',
+                        neutral: '#F5F7FA',
+                        dark: '#1D2129',
+                        light: '#FFFFFF',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'article': '0 4px 20px rgba(0, 0, 0, 0.05)',
+                        'card-hover': '0 10px 30px rgba(0, 0, 0, 0.1)',
+                    }
+                },
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-balance {
+                text-wrap: balance;
+            }
+            .reading-progress {
+                height: 3px;
+                background-color: theme('colors.primary');
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 0%;
+                z-index: 50;
+                transition: width 0.1s ease;
+            }
+            .fade-in {
+                animation: fadeIn 0.6s ease-in-out;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .markdown-content h2 {
+                @apply text-2xl font-semibold text-dark mt-8 mb-4 scroll-mt-20;
+            }
+            .markdown-content h3 {
+                @apply text-xl font-medium text-dark mt-6 mb-3 scroll-mt-20;
+            }
+            .markdown-content p {
+                @apply text-gray-700 mb-4 leading-relaxed;
+            }
+            .markdown-content ul {
+                @apply list-disc pl-5 mb-4 space-y-2;
+            }
+            .markdown-content ol {
+                @apply list-decimal pl-5 mb-4 space-y-2;
+            }
+            .markdown-content img {
+                @apply rounded-lg shadow-md max-w-full mx-auto my-6;
+            }
+            .markdown-content blockquote {
+                @apply border-l-4 border-primary pl-4 italic text-gray-600 my-4;
+            }
+            .markdown-content code {
+                @apply bg-neutral px-1 py-0.5 rounded text-sm font-mono;
+            }
+        }
+    </style>
+
+    <!-- 多语言声明 -->
+    <link rel="alternate" hreflang="zh-CN" href="https://www.wafubrother.cn/index.html" />
+    <link rel="alternate" hreflang="en" href="https://www.wafubrother.com/index.html" />
+    <link rel="alternate" hreflang="vi" href="https://www.wafuvn.com/index.html" />
+    <link rel="alternate" hreflang="th" href="https://www.wafuth.com/index.html" />
+</head>
+
+<body class="font-inter text-gray-800 bg-white">
+    <header id="navbar" class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-35 md:h-30">
+                <!-- Brand Logo -->
+                <a href="/index.html" class="flex items-center" aria-label="Wafu Brothers Homepage">
+                    <img src="/images/logo-inverse.png" alt="WaFu Brothers" class="h-35 md:h-30 object-cover">WAFU
+                </a>
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-1 md:space-x-8 rtl:space-x-reverse">
+                    <a href="/index.html"
+                        class="text-primary font-medium hover:text-secondary transition-colors px-2 py-1">الرئيسية</a>
+
+                    <!-- Product Center Dropdown -->
+                    <div class="relative group">
+                        <a href="/products.html"
+                            class="text-gray-800 font-medium hover:text-primary transition-colors flex items-center tracking-wide px-2 py-1">
+                            المنتجات <i
+                                class="fa fa-angle-down ml-1 text-xs transition-transform group-hover:rotate-180 duration-300"></i>
+                        </a>
+                        <!-- Optimized Dropdown -->
+                        <div
+                            class="absolute left-0 mt-1 w-64 rounded-lg shadow-xl bg-white ring-1 ring-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+                                    transition-all duration-300 z-50 transform origin-top scale-95 group-hover:scale-100">
+                            <div class="py-2">
+                                <a href="/products.html#Leak_detector"
+                                    class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">المجموعة الكاملة من كاشفات التسرب</a>
+                                <a href="/products.html#Non-standard"
+                                    class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">
+                                    كاشف تسرب مخصص غير قياسي</a>
+                                <a href="/products.html#Tooling"
+                                    class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">تركيبات وأدوات كشف التسرب</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solutions Dropdown -->
+                    <div class="relative group">
+                        <a href="/application.html"
+                            class="text-gray-800 font-medium hover:text-primary transition-colors flex items-center tracking-wide px-2 py-1">
+                            حالات التطبيق <i
+                                class="fa fa-angle-down ml-1 text-xs transition-transform group-hover:rotate-180 duration-300"></i>
+                        </a>
+                        <div
+                            class="absolute left-0 mt-1 w-64 rounded-lg shadow-xl bg-white ring-1 ring-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+                                    transition-all duration-300 z-50 transform origin-top scale-95 group-hover:scale-100">
+                            <div class="py-2">
+                                <a href="solu/solu-carparts.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة قطع السيارات</a>
+                                <a href="solu/solu-aerospace.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة الطيران والفضاء</a>
+                                <a href="solu/solu-medical.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة الأجهزة الطبية</a>
+                                <a href="solu/solu-battery.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة البطاريات</a>
+                                <a href="solu/solu-food.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة التعبئة والتغليف</a>
+                                <a href="solu/solu-kitchen.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة الأجهزة المنزلية</a>
+                                <a href="solu/solu-electronic.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة الإلكترونيات</a>
+                                <a href="solu/solu-pipeline.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة خطوط الأنابيب</a>
+                                <a href="solu/solu-hardware.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">الأجهزة والصبات</a>
+                                <a href="solu/solu-lighting.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">الأمن والإضاءة</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="/about.html"
+                        class="text-gray-800 font-medium hover:text-primary transition-colors tracking-wide px-2 py-1">معلومات عنا</a>
+
+                    <!-- Service Support Dropdown -->
+                    <div class="relative group">
+                        <a href="/services.html"
+                            class="text-gray-800 font-medium hover:text-primary transition-colors flex items-center tracking-wide px-2 py-1">
+                            الخدمة والدعم <i
+                                class="fa fa-angle-down ml-1 text-xs transition-transform group-hover:rotate-180 duration-300"></i>
+                        </a>
+                        <div
+                            class="absolute left-0 mt-1 w-64 rounded-lg shadow-xl bg-white ring-1 ring-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+                                    transition-all duration-300 z-50 transform origin-top scale-95 group-hover:scale-100">
+                            <div class="py-2">
+                                <a href="/resource.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">مركز الموارد</a>
+                                <a href="/Allquestions.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">الأسئلة الشائعة</a>
+                                <a href="/test-case.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صور الحالات</a>
+                                <a href="/digital.html"
+                                    class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">فيديوهات الحالات</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Language Selector -->
+                    <div class="relative group">
+                        <button
+                            class="flex items-center text-gray-800 font-medium hover:text-primary transition-colors px-2 py-1">
+                            اللغة <i
+                                class="fa fa-angle-down ml-1 text-xs transition-transform group-hover:rotate-180 duration-300"></i>
+                        </button>
+                        <div
+                            class="absolute mt-1 w-40 bg-white shadow-lg rounded-md ring-1 ring-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <a href="https://www.wafubrother.com/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">🇺🇸
+                                English</a>
+                            <a href="https://www.wafubrother.cn/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">🇨🇳
+                                中文</a>
+                            <a href="https://www.wafuvn.com/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">🇻🇳
+                                Tiếng Việt</a>
+                            <a href="https://www.wafuth.com/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">🇹🇭
+                                ไทย</a>
+                            <a href="https://www.wafuar.com/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">
+                                العربية 🇸🇦</a>
+                        </div>
+                    </div>
+                    <a href="/contact.html"
+                        class="bg-primary hover:bg-secondary text-white font-medium py-2 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        اتصل بنا
+                    </a>
+
+
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-800 hover:text-primary focus:outline-none p-2">
+                    <i class="fa fa-bars text-xl transition-transform duration-300"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100 shadow-lg">
+            <div class="container mx-auto px-4 py-3">
+                <nav class="flex flex-col space-y-1 py-2">
+                    <a href="/index.html"
+                        class="block py-3 px-4 text-primary font-medium hover:bg-gray-50 rounded-md transition-colors">الرئيسية</a>
+
+                    <!-- Product Dropdown Mobile -->
+                    <div class="mobile-dropdown">
+                        <button
+                            class="w-full flex justify-between items-center text-gray-800 font-medium hover:text-primary py-3 px-4 w-full text-left focus:outline-none">
+                            المنتجات <i class="fa fa-plus text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div class="mobile-dropdown-content hidden pl-6 mt-0 border-l-2 border-gray-100">
+                            <a href="/products.html#Leak_detector"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">كاشف التسرب</a>
+                            <a href="/products.html#Non-standard"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">
+                                كاشف تسرب مخصص غير قياسي</a>
+                            <a href="/products.html#Tooling"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">تركيبات وأدوات كشف التسرب</a>
+                        </div>
+                    </div>
+
+                    <!-- Application Case Mobile -->
+                    <div class="mobile-dropdown">
+                        <button
+                            class="w-full flex justify-between items-center text-gray-800 font-medium hover:text-primary py-3 px-4 w-full text-left focus:outline-none">
+                            حالات التطبيق <i class="fa fa-plus text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div class="mobile-dropdown-content hidden pl-6 mt-0 border-l-2 border-gray-100">
+                            <a href="solu/solu-carparts.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة قطع السيارات</a>
+                            <a href="solu/solu-aerospace.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة الطيران والفضاء</a>
+                            <a href="solu/solu-medical.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة الأجهزة الطبية</a>
+                            <a href="solu/solu-battery.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة البطاريات</a>
+                            <a href="solu/solu-food.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة التعبئة والتغليف</a>
+                            <a href="solu/solu-kitchen.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة الأجهزة المنزلية</a>
+                            <a href="solu/solu-electronic.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة الإلكترونيات</a>
+                            <a href="solu/solu-pipeline.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة خطوط الأنابيب</a>
+                            <a href="solu/solu-hardware.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">الأجهزة والصبات</a>
+                            <a href="solu/solu-lighting.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">الأمن والإضاءة</a>
+                        </div>
+                    </div>
+
+                    <a href="/about.html"
+                        class="block py-3 px-4 text-gray-800 hover:text-primary hover:bg-gray-50 rounded-md transition-colors">معلومات عنا</a>
+
+                    <!-- Service Support Mobile -->
+                    <div class="mobile-dropdown">
+                        <button
+                            class="w-full flex justify-between items-center text-gray-800 font-medium hover:text-primary py-3 px-4 w-full text-left focus:outline-none">
+                            الخدمة والدعم <i class="fa fa-plus text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div class="mobile-dropdown-content hidden pl-6 mt-0 border-l-2 border-gray-100">
+                            <a href="/solu/solu-carparts.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">مركز الموارد</a>
+                            <a href="/solu/solu-medical.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">الأسئلة الشائعة</a>
+                            <a href="/solu/solu-battery.html"
+                                class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">المقالات التقنية</a>
+                        </div>
+                    </div>
+                    <!-- Mobile Language Selector -->
+                    <div class="mobile-dropdown">
+                        <button
+                            class="w-full flex justify-between items-center text-gray-800 font-medium hover:text-primary py-3 px-4 w-full text-left focus:outline-none">
+                            اللغة <i class="fa fa-plus text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div class="mobile-dropdown-content hidden pl-6 mt-0 border-l-2 border-gray-100">
+                            <a href="https://www.wafubrother.com/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">🇺🇸
+                                English</a>
+                            <a href="https://www.wafubrother.cn/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">🇨🇳
+                                中文</a>
+                            <a href="https://www.wafuvn.com/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">🇻🇳
+                                Tiếng Việt</a>
+                            <a href="https://www.wafuth.com/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">🇹🇭
+                                ไทย</a>
+                            <a href="https://www.wafuar.com/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary">
+                                العربية 🇸🇦</a>
+                        </div>
+                    </div>
+                    <a href="/contact.html"
+                        class="block py-3 px-4 mt-2 text-center bg-primary text-white rounded-md hover:bg-secondary transition-colors">اتصل بنا</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        <!-- 面包屑导航 -->
+        <nav class="text-sm text-gray-500 mb-6">
+            <ol class="flex flex-wrap items-center">
+                <li><a href="/" class="hover:text-primary transition-colors duration-200">الرئيسية</a></li>
+                <li class="mx-2"><i class="fa fa-angle-right text-xs"></i></li>
+                <li><a href="/services.html" class="hover:text-primary transition-colors duration-200">مركز الخدمات</a></li>
+                <li class="mx-2"><i class="fa fa-angle-right text-xs"></i></li>
+                <li><a href="/resource.html" class="hover:text-primary transition-colors duration-200">المقالات التقنية</a></li>
+                <li class="mx-2"><i class="fa fa-angle-right text-xs"></i></li>
+                <li class="text-gray-700"><strong class="text-blue-600">جهاز اختبار التسرب</strong> – دليل الشراء: خمسة مؤشرات أساسية لا يمكنك تجاهلها</li>
+            </ol>
+        </nav>
+        
+        <div class="flex flex-col lg:flex-row gap-8">
+            <article class="w-full lg:w-2/3 bg-white rounded-xl shadow-article p-6 md:p-8 fade-in">
+                <header class="mb-8">
+                    <h1 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-dark leading-tight text-balance mb-4">
+                        <strong class="text-blue-600">جهاز اختبار التسرب</strong> – دليل الشراء: خمسة مؤشرات أساسية لا يمكنك تجاهلها
+                    </h1>
+                    <div class="flex flex-wrap items-center text-sm text-gray-500 space-x-4">
+                        <span><i class="fa fa-calendar-o mr-1"></i> 13 سبتمبر 2025</span>
+                        <span><i class="fa fa-user-o mr-1"></i> WaFubrother</span>
+                        <span><i class="fa fa-tag mr-1"></i> اختبار الإحكام، دليل الشراء</span>
+                    </div>
+                </header>
+        
+                <div class="markdown-content">
+                    <p class="text-base" style="text-indent: 2em;">
+                        في الإنتاج الصناعي — وخاصة في مجالات مثل السيارات الجديدة للطاقة، الأجهزة الطبية، الإلكترونيات الاستهلاكية، الأجهزة المنزلية، وصناعة الطيران — تُعد إحكامية المنتجات (مقاومة الماء / الأداء المحكم) مؤشراً أساسياً للجودة. إن اختيار جهاز اختبار تسرب مناسب وموثوق يؤثر مباشرة على جودة المنتج وتكلفة الإنتاج وكفاءة التشغيل. ومع تنوع المنتجات في السوق وأساليب التسويق المقنعة، كيف يمكنك تجنب الأخطاء واختيار الجهاز الأنسب؟ في هذا المقال نكشف لك خمسة مؤشرات رئيسية يجب التركيز عليها عند اختيار الجهاز.
+                    </p>
+                    <img src="../images/services/faq/faq_16.jpg" alt="Buying Guide" title="Buying Guide">
+        
+                    <h2>1. دقة الكشف والوضوح</h2>
+                    <h4>لماذا يعتبر هذا مهماً؟</h4>
+                    <p class="text-base" style="text-indent: 2em;">
+                        الدقة والوضوح هما روح جهاز اختبار التسرب، فهما يحددان ما إذا كان الجهاز قادرًا على اكتشاف التسربات الدقيقة. عدم كفاية الدقة قد يؤدي إلى الحكم على المنتجات الجيدة بأنها غير صالحة (رفض خاطئ)، أو تمرير منتجات غير صالحة (قبول خاطئ)، مما يؤدي إلى خسائر كبيرة.
+                    </p>
+                    <h4>كيفية تجنب الأخطاء:</h4>
+                    <ul>
+                        <li>فرّق بين "الوضوح" و"الدقة": الوضوح هو أصغر قيمة يمكن للجهاز عرضها (مثل 0.1 باسكال)، بينما الدقة تمثل الانحراف بين القيمة المقاسة والقيمة الحقيقية (مثل ±1 باسكال). كثير من مندوبي المبيعات يبالغون في الوضوح ويتجنبون الحديث عن الدقة. اسأل دائماً: “ما هي الدقة ضمن كامل نطاق القياس؟”</li>
+                        <li>قارن احتياجاتك: ما هو معدل التسرب المسموح به لمنتجك؟ إذا كان معيار المنتج هو 5 باسكال/دقيقة، يجب أن تكون دقة الجهاز ±1 باسكال أو أفضل لضمان دقة الحكم. لا تدفع تكلفة إضافية لدقة أعلى مما تحتاجه.</li>
+                        <li>اطلب اختباراً فعلياً: استخدم قطعة عمل بها ثقب تسرب معياري (بقيمة تسرب دقيقة معروفة)، واختبر بالجهاز. تحقق من التكرارية والتوافق مع القيمة القياسية.</li>
+                    </ul>
+        
+                    <h2>2. كفاءة الكشف (زمن الدورة)</h2>
+                    <h4>لماذا يعتبر هذا مهماً؟</h4>
+                    <p class="text-base" style="text-indent: 2em;">
+                        كفاءة الكشف تؤثر مباشرة على زمن دورة خط الإنتاج. الجهاز البطيء يصبح عنق زجاجة، مما يقلل كفاءة الإنتاج العامة.
+                    </p>
+                    <h4>كيفية تجنب الأخطاء:</h4>
+                    <ul>
+                        <li>افهم زمن عملية الاختبار: تتضمن دورة اختبار الإحكام الكاملة التضخيم، الاستقرار، الكشف، والتفريغ. اسأل عن زمن كل مرحلة والزمن الإجمالي بالثواني.</li>
+                        <li>تأكد من توافق الطاقة الإنتاجية: بناءً على دورة الإنتاج (مثل 30 ثانية لكل وحدة)، اطلب من المورد إثبات أنه يمكنه إكمال الاختبار وإخراج النتيجة خلال الزمن الموعود.</li>
+                        <li>انتبه لزمن “الاستقرار”: مرحلة استقرار الضغط بعد التضخيم تستهلك معظم الوقت. الأجهزة ذات الخوارزميات المتقدمة تقلل زمن الاستقرار، مما يحسن效率.</li>
+                    </ul>
+        
+                    <h2>3. الاستقرار وقابلية التكرار</h2>
+                    <h4>لماذا يعتبر هذا مهماً؟</h4>
+                    <p class="text-base" style="text-indent: 2em;">
+                        يشير الاستقرار إلى قدرة الجهاز على الحفاظ على الدقة أثناء التشغيل طويل المدى؛ وتشير قابلية التكرار إلى اتساق النتائج عند اختبار نفس القطعة مرات متعددة. وهما الأساس لضمان جودة ثابتة على المدى الطويل.
+                    </p>
+                    <h4>كيفية تجنب الأخطاء:</h4>
+                    <ul>
+                        <li>اسأل عن ماركة حساس الضغط: فهو المكوّن الأهم ويحدد الاستقرار. معرفة العلامة (مثل MEAS الأمريكية أو First Sensor الألمانية) يساعدك في تقييم مستوى الجهاز.</li>
+                        <li>اطلب تقرير تكرارية: المصنّعون الموثوقون يوفرون تقارير مبنية على المعايير الوطنية أو الصناعية، مثل نتائج 10 اختبارات متتالية مع الانحراف المعياري.</li>
+                        <li>اطلع على حالات العملاء: تحقق من استخدام الجهاز في ظروف مشابهة لضمان الأداء على المدى الطويل.</li>
+                    </ul>
+        
+                    <h2>4. ميزات البرنامج والذكاء</h2>
+                    <h4>لماذا يعتبر هذا مهماً؟</h4>
+                    <p class="text-base" style="text-indent: 2em;">
+                        أجهزة اختبار التسرب الحديثة ليست مجرد أجهزة، بل برامج أيضاً. البرنامج الجيد يحسن سهولة الاستخدام، تتبع البيانات، ومستوى الأتمتة.
+                    </p>
+                    <h4>كيفية تجنب الأخطاء:</h4>
+                    <ul>
+                        <li>قيّم واجهة الاستخدام: هل النظام معرب بالكامل؟ هل منطق التشغيل واضح؟ هل إعداد المعايير سهل؟ اطلب عرضاً حياً.</li>
+                        <li>تحقق من قدرات إدارة البيانات: هل يسجّل الجهاز كل نتائج الاختبار تلقائياً؟ هل يمكن تصدير البيانات إلى Excel أو CSV؟ هذا مهم لتتبع الجودة والتحليل الإحصائي.</li>
+                        <li>انتبه لواجهات الاتصال: هل يدعم RS485، Ethernet، Modbus، Profinet؟ هذا يحدد ما إذا كان يمكن دمجه في خط الإنتاج أو نظام MES.</li>
+                    </ul>
+        
+                    <h2>5. تصميم الجيج والتركيبات</h2>
+                    <h4>لماذا يعتبر هذا مهماً؟</h4>
+                    <p class="text-base" style="text-indent: 2em;">
+                        “ثلاثة أجزاء جهاز، سبعة أجزاء تجهيزة.” حتى أدق جهاز يصبح عديم الفائدة إذا كان تصميم التركيبة سيئاً ويسبب تسرباً إضافياً.
+                    </p>
+                    <h4>كيفية تجنب الأخطاء:</h4>
+                    <ul>
+                        <li>تأكد من موثوقية الإحكام: طريقة الإغلاق (مثل المكبس الهوائي، الحلقة السيليكونية) يجب أن تمنع أي تسرب إضافي.</li>
+                        <li>تحكم في حجم الاختبار: يجب أن يكون حجم الحجرة الداخلية صغيراً قدر الإمكان ومتوافقاً مع الحجم المستخدم في معايرة الجهاز.</li>
+                        <li>اطلب تصميمًا متكاملاً: الموردون الذين يقدمون الجهاز والتركيبة معاً يقللون المشكلات المستقبلية.</li>
+                    </ul>
+        
+                    <h2>الخلاصة والتوصيات</h2>
+                    <p class="text-base" style="text-indent: 2em;">
+                        شراء جهاز اختبار تسرب هو استثمار تقني — لا تعتمد على السعر فقط. تذكّر المؤشرات الخمسة التالية:
+                    </p>
+                    <ul>
+                        <li>الدقة والوضوح — الأساس.</li>
+                        <li>كفاءة الكشف — حاسمة لخط الإنتاج.</li>
+                        <li>الاستقرار والتكرار — جوهر الأداء.</li>
+                        <li>ذكاء البرنامج — قيمة مضافة.</li>
+                        <li>التركيبات — ضمان النتائج الموثوقة.</li>
+                    </ul>
+                    <p class="text-base" style="text-indent: 2em;">
+                        أفضل طريقة لتجنب الأخطاء هي إجراء اختبار فعلي باستخدام عيناتك. خذ القطع الخاصة بك إلى المورد واطلب العرض الفعلي، ثم قيّم الأداء وفق المؤشرات الخمسة لاتخاذ القرار الأكثر دقة وموثوقية.
+                    </p>
+        
+                </div>
+
+                <footer class="mt-12 pt-8 border-t border-gray-100">
+                    <div class="flex flex-wrap justify-between items-center mb-8">
+                        <div class="flex items-center space-x-4">
+                            <span class="text-sm text-gray-500">مشاركة المقال:</span>
+                            <a href="https://service.weibo.com/share/share.php?url=https://www.wafubrother.com&title=This article is worth reading"
+                                target="_blank" rel="noopener noreferrer" aria-label="Share on Weibo"
+                                class="w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center hover:bg-red-600 transition-colors duration-200">
+                                <i class="fa fa-weibo"></i>
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.wafubrother.com"
+                                target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"
+                                class="w-8 h-8 rounded-full bg-blue-700 text-white flex items-center justify-center hover:bg-blue-800 transition-colors duration-200">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="mailto:?subject=Recommended Reading: This article is great&body=I found this article very valuable, check it out:%0Ahttps://www.wafubrother.com"
+                                aria-label="Send via Email"
+                                class="w-8 h-8 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-900 transition-colors duration-200">
+                                <i class="fa fa-envelope-o"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <span
+                            class="px-4 py-2 bg-neutral rounded-full text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">اختبار الإحكام</span>
+                        <span
+                            class="px-4 py-2 bg-neutral rounded-full text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">كشف التسرب بالهيليوم</span>
+                        <span
+                            class="px-4 py-2 bg-neutral rounded-full text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">تقنيات الاختبار الصناعية</span>
+                        <span
+                            class="px-4 py-2 bg-neutral rounded-full text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">القياس عالي الدقة</span>
+                    </div>
+                    
+                    
+                    <div class="flex flex-col sm:flex-row justify-between gap-6 mt-10">
+                        <a href="./T-art-15.html"
+                            class="flex items-center space-x-3 text-gray-700 hover:text-primary transition-colors duration-200">
+                            <i class="fa fa-angle-left"></i>
+                            <div>
+                                <p class="text-sm text-gray-500">المقال السابق</p>
+                                <p class="font-medium">تعلم مبدأ عمل <strong class="text-blue-600">أجهزة اختبار الإحكام</strong> في ثوانٍ من خلال مثال اختبار إحكام الهاتف الذكي</p>
+                                </p>
+                            </div>
+                        </a>
+                        <!-- 下一篇 -->
+                        <a href="./T-art-19.html"
+                            class="flex items-center space-x-3 text-gray-700 hover:text-primary transition-colors duration-200 justify-end">
+                            <div class="text-right">
+                                <p class="text-sm text-gray-500">المقال التالي</p>
+                                <p class="font-medium">الاختبار التقليدي مقابل <strong class="text-blue-600">الاختبار الحديث لمقاومة الماء</strong> في الهواتف الذكية</p>
+                            </div>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                    
+                </footer>
+            </article>
+
+            <!-- 侧边栏 -->
+            <aside class="w-full lg:w-1/3 space-y-8">
+                <div class="bg-white rounded-xl shadow-article p-6 fade-in">
+                    <h3 class="text-lg font-semibold text-dark mb-4">حول WAFU</h3>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <img src="../images/we.jpg" alt="WAFU Brothers" class="w-16 h-16 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-medium text-dark">WAFU Brothers</h4>
+                            <p class="text-sm text-gray-500">خبراء أجهزة اختبار التسرب</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-sm mb-4">
+                        مع 16 عاماً من الخبرة في البحث والتطوير في تقنيات اختبار الإحكام، نتخصص في تطوير أجهزة اختبار الإحكام عالية الدقة مع خبرة واسعة في مشاريع قطع غيار السيارات والطاقة الجديدة والأجهزة الطبية وغيرها.
+                    </p>
+                    <a href="../resource.html"
+                        class="text-primary hover:text-primary/80 text-sm font-medium transition-colors duration-200">عرض المزيد من المقالات</a>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-article p-6 fade-in" style="animation-delay: 0.1s">
+                    <h3 class="text-lg font-semibold text-dark mb-4">مقالات ذات صلة</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3">
+                            <img src="../images/logo-inverse.png" alt="Thumbnail of article on airtightness testing for new energy vehicle batteries"
+                                class="w-20 h-16 rounded-lg object-cover">
+                            <div>
+                                <a href="./T-art-2.html"
+                                    class="font-medium text-dark hover:text-primary transition-colors duration-200 line-clamp-2">
+                                    حلول اختبار الإحكام الشاملة | WAFU Brothers يساعد الصناعة على دخول عصر “صفر تسرب”
+                                </a>
+                                <p class="text-xs text-gray-500 mt-1">2025-05-28</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <img src="../images/services/faq/faq_4.jpg" alt="WAFU Brothers Engineer"
+                                class="w-20 h-16 rounded-lg object-cover">
+                            <div>
+                                <a href="./T-art-7.html"
+                                    class="font-medium text-dark hover:text-primary transition-colors duration-200 line-clamp-2">
+                                    كثرة إعادة العمل في اختبارات الإحكام؟ قد يكون السبب في نظام الاختبار نفسه
+                                </a>
+                                <p class="text-xs text-gray-500 mt-1">2025-05-15</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <img src="../images/solu/electronic/dianji.jpg" alt="Thumbnail of article on waterproof airtightness testing of roller shutter motors"
+                                class="w-20 h-16 rounded-lg object-cover">
+                            <div>
+                                <a href="./T-art-9.html"
+                                    class="font-medium text-dark hover:text-primary transition-colors duration-200 line-clamp-2">
+                                    اختبار إحكام مقاومة الماء لمحركات الأبواب الدوارة: الأسباب والحلول في مقال واحد
+                                </a>
+                                <p class="text-xs text-gray-500 mt-1">2025-04-30</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+<!-- Popular Products -->
+<div class="bg-white rounded-xl shadow-article p-6 fade-in" style="animation-delay: 0.2s">
+    <h3 class="text-lg font-semibold text-dark mb-4">المنتجات الشائعة</h3>
+    <div class="flex flex-wrap gap-2">
+        <a href="../products/product-one.html"
+            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">جهاز اختبار التسرب متعدد الوظائف</a>
+        <a href="../products/product-two.html"
+            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">جهاز اختبار التسرب متعدد القنوات</a>
+        <a href="../products/product-five.html"
+            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">جهاز اختبار التسرب بالضغط المباشر</a>
+        <a href="../products/product-four.html"
+            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">جهاز اختبار التسرب بالضغط التفاضلي</a>
+        <a href="../products/product-three.html"
+            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">جهاز اختبار التسرب بنظام التدفق</a>
+        <a href="../products/product-nine.html"
+            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">جهاز اختبار التسرب المخصص غير القياسي</a>
+        <a href="../products/product-seven.html"
+            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">جهاز اختبار التسرب بنظام الخزان</a>
+        <a href="../products/water-leaktest.html"
+            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">جهاز اختبار الغمر المائي</a>
+        <a href="../products/leaktester-1.html"
+            class="px-3 py-1.5 bg-neutral rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 text-sm">جهاز اختبار الإحكام والغمر المائي</a>
+    </div>
+</div>
+
+<!-- Contact Consultation -->
+<div class="bg-gradient-to-br from-primary to-secondary text-white rounded-xl shadow-article p-6 fade-in"
+style="animation-delay: 0.3s">
+<h3 class="text-lg font-semibold mb-4">هل تحتاج إلى استشارة متخصصة؟</h3>
+<p class="mb-6 text-white/90">
+    دعنا نتقدم معاً. باستخدام معدات اختبار عالية الدقة، نزيل المخاطر الضخمة الناتجة عن أصغر التسربات.
+</p>
+<a href="../contact.html"
+    class="block w-full py-3 bg-white text-primary rounded-lg text-center font-medium hover:bg-gray-100 transition-colors duration-200">
+    استشر الآن
+</a>
+<div class="flex items-center justify-between mt-4 text-white/80 text-sm">
+    <span><i class="fa fa-phone mr-1"></i>+86 17376311087</span>
+    <span><i class="fa fa-envelope-o mr-1"></i>wafubrother@outlook.com</span>
+</div>
+</div>
+
+            </aside>
+        </div>
+    </main>
+
+    
+    <footer class="bg-white border-t border-gray-200 text-gray-800 pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="lg:col-span-4">
+                    <div class="flex items-center mb-6">
+                        <span class="text-2xl font-semibold text-primary tracking-tight">WaFu<span
+                                class="text-dark">Brothers</span></span>
+                    </div>
+                    <p class="text-gray-600 mb-6 text-balance max-w-md">
+                        شركة WAFU Brothers (شنتشن) للتكنولوجيا الآلية المحدودة، التي تأسست في عام 2009، تخدم أكثر من 8000 عميل محلي ودولي بما في ذلك أودي. كشركة رائدة عالميًا في تصنيع أجهزة اختبار التسرب وتقديم الحلول، فقد تراكم لديها 16 عامًا من الخبرة في الأتمتة غير القياسية والكشف عن الإحكام. بروح الابتكار والجرأة في تحقيق الاختراقات، نوجه العملاء بتصاميم متقدمة ونقدم حلول منتجات ذات قدرة تنافسية دولية.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <!-- Weibo -->
+                        <a href="https://weibo.com/u/7907943947"
+                            class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-[#E6162D] hover:text-white transition-all duration-300"
+                            aria-label="Weibo">
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                        <!-- YouTube -->
+                        <a href="https://www.youtube.com/@leaktesters"
+                            class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-[#FF0000] hover:text-white transition-all duration-300"
+                            aria-label="YouTube">
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/wafu_airleak"
+                            class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-[#E1306C] hover:text-white transition-all duration-300"
+                            aria-label="Instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://x.com/wafu_Airleak"
+                            class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-black hover:text-white transition-all duration-300"
+                            aria-label="Twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="lg:col-span-2">
+                    <h3 class="font-semibold text-lg mb-6 text-dark flex items-center">
+                        <i class="fa fa-link text-primary mr-2"></i>روابط سريعة
+                    </h3>
+                    <ul class="space-y-3">
+                        <li><a href="/index.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group">
+                                <i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs transform group-hover:translate-x-1 transition-transform"></i>الرئيسية</a>
+                        </li>
+                        <li><a href="/products.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group">
+                                <i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs transform group-hover:translate-x-1 transition-transform"></i>المنتجات</a>
+                        </li>
+                        <li><a href="/application.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group">
+                                <i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs transform group-hover:translate-x-1 transition-transform"></i>حالات التطبيق</a></li>
+                        <li><a href="/about.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group">
+                                <i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs transform group-hover:translate-x-1 transition-transform"></i>معلومات عنا</a></li>
+                        <li><a href="/services.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group">
+                                <i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs transform group-hover:translate-x-1 transition-transform"></i>الدعم</a>
+                        </li>
+                        <li><a href="/contact.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group">
+                                <i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs transform group-hover:translate-x-1 transition-transform"></i>اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <!-- Product Categories -->
+                <div class="lg:col-span-3">
+                    <h3 class="font-semibold text-lg mb-6 text-dark flex items-center">
+                        <i class="fa fa-cube text-primary mr-2"></i>فئات المنتجات
+                    </h3>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-4">
+                        <li><a href="/products/product-one.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>جهاز اختبار التسرب متعدد الوظائف</a></li>
+                        <li><a href="/products/product-two.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>جهاز اختبار التسرب متعدد القنوات</a></li>
+                        <li><a href="/products/product-three.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>جهاز اختبار التسرب بتدفق HF</a></li>
+                        <li><a href="/products/product-four.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>جهاز اختبار التسرب بفرق الضغط</a></li>
+                        <li><a href="/products/product-five.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>جهاز اختبار التسرب بالضغط المباشر</a></li>
+                        <li><a href="/products/product-six.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>تركيبات الإحكام المكتبية</a></li>
+                        <li><a href="/products/product-seven.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>جهاز اختبار التسرب الخزفي</a></li>
+                        <li><a href="/products/product-eight.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>التركيبات الخزفية</a></li>
+                        <li><a href="/products/product-nine.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>جهاز اختبار التسرب المخصص</a></li>
+                        <li><a href="/products/leak-tester-allinone.html"
+                                class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
+                                    class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>نظام اختبار التسرب الكل في واحد</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="lg:col-span-3">
+                    <h3 class="font-semibold text-lg mb-6 text-dark flex items-center">
+                        <i class="fa fa-map-marker text-primary mr-2"></i>معلومات الاتصال
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start"><i
+                                class="fa fa-map-marker text-primary mt-1 mr-3 w-4 text-center"></i><span
+                                class="text-gray-600">الطابق الثاني، مبنى 6، حديقة Shayi Environmental الصناعية، رقم 496 طريق Chuangcheng، شارع Shajing، منطقة Bao'an، شنتشن</span></li>
+                        <li class="flex items-start"><i
+                                class="fa fa-phone text-primary mt-1 mr-3 w-4 text-center"></i><span
+                                class="text-gray-600">+86 17376311087</span></li>
+                        <li class="flex items-start"><i
+                                class="fa fa-envelope text-primary mt-1 mr-3 w-4 text-center"></i><span
+                                class="text-gray-600">wafubrother@outlook.com</span></li>
+                        <li class="flex items-start"><i
+                                class="fa fa-clock-o text-primary mt-1 mr-3 w-4 text-center"></i><span
+                                class="text-gray-600">من الاثنين إلى الجمعة: 9:00 - 18:00</span></li>
+                    </ul>
+                    <br />
+                    <h3 class="font-semibold text-lg mb-4 text-dark flex items-center">
+                        <i class="fa fa-handshake-o text-primary mr-2"></i>روابط صديقة
+                    </h3>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://www.west.cn/" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-md text-sm transition-colors">
+                            <i class="fa fa-external-link mr-1.5 text-xs"></i>West.cn
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-200 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                        &copy; 2025 شركة WAFU Brothers (شنتشن) للتكنولوجيا الآلية المحدودة. جميع الحقوق محفوظة.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+                        <a href="/sitemap.html"
+                            class="text-gray-500 hover:text-primary text-sm transition-colors">خريطة الموقع</a>
+                        <a href="/contact.html"
+                            class="text-gray-500 hover:text-primary text-sm transition-colors">الدعم الفني</a>
+                        <a href="/faq/dual-channel-10inch-kunlun-screen-leak-tester-manual.pdf"
+                            class="text-gray-500 hover:text-primary text-sm transition-colors">دليل المستخدم</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top"
+        class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:bg-primary/90">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+    <script src="/js/tailwind.config.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+<script src="/js/ar.js"></script>
+</html>
