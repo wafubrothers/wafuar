@@ -1,0 +1,3 @@
+https://www.wafuar.com/* https://wafuar.com/:splat 301
+http://wafuar.com/* https://wafuar.com/:splat 301
+http://www.wafuar.com/* https://wafuar.com/:splat 301
