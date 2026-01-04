@@ -4,16 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اختبار تسرب السيارات لوحدات الشاحن المُدمج OBC/أغطية المحرك/حساسات ADAS/أضواء الذيل | WaFu</title>
+    <title>دراسة حالة اختبار إحكام الهواء لمكوّنات مكيف السيارة｜WAFU Brothers</title>
     <meta name="description"
-      content="حلول متخصصة لاختبار التسرب لـ: شواحن OBC المدمجة في المركبات (تحقق مقاومة الغبار/الماء IP6K9K)، مجموعات غطاء المحرك (حساسية 0.5Pa)، حساسات مراقبة ADAS (مقاومة صدمات وفق MIL-STD-810G)، وحدات أضواء الذيل (اختبار دورات ضغط 50kPa)، معتمد وفق IATF 16949 بدقة 0.01% FS.">
-    <meta name="keywords"
-      content="جهاز اختبار مقاومة الماء OBC، اختبار إحكام غطاء المحرك، كشف تسرب حساس ADAS، فحص تسرب أضواء الذيل، اختبار نهاية خط الإنتاج للسيارات">
+      content="تعمل مكوّنات مكيف السيارة لفترات طويلة تحت ضغط عالٍ ودورات حرارية ساخنة وباردة وظروف تشغيل معقّدة، ما يفرض متطلبات صارمة للغاية على أداء الإحكام. تستعرض هذه المقالة، من خلال حالة تطبيق فعلية، حل اختبار إحكام الهواء لمكوّنات مكيف السيارة، بما في ذلك طريقة الاختبار بالضغط الموجب، مع تحليل خطة الاختبار، وزمن الدورة، ومعايير الحكم، لمساعدة الشركات على تحسين جودة الإحكام، وتقليل مخاطر التسرب، وضمان جودة المركبة ككل.">
+    <meta name="keywords" content="اختبار إحكام الهواء لمكوّنات مكيف السيارة،
+    اختبار إحكام مكيف السيارة،
+    فحص إحكام مكوّنات مكيف السيارة،
+    اختبار إحكام الضغط الموجب لمكوّنات مكيف السيارة،
+    دراسة حالة اختبار إحكام مكوّنات السيارات،
+    اختبار أداء إحكام مكيف السيارة">
 
-    <script src="../js/tailwind.js"></script>
-    <link href="../css/font.css" rel="stylesheet">
-    <link href="../css/tailwindcss.css" rel="stylesheet">
-    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="/js/tailwind.js"></script>
+    <link href="/css/font.css" rel="stylesheet">
+    <link href="/css/tailwindcss.css" rel="stylesheet">
+    <link href="/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-white text-gray-800 font-inter overflow-x-hidden">
@@ -21,17 +26,17 @@
         <div class="container mx-auto px-4">
           <div class="flex items-center justify-between h-16 md:h-20">
             <!-- Brand Logo -->
-            <a href="../index.html" class="flex items-center" aria-label="Wafu Brothers Homepage">
-              <img src="../images/logo-inverse.png" alt="WaFu Brothers" class="h-10 md:h-12 object-contain">WAFU
+            <a href="/index.html" class="flex items-center" aria-label="Wafu Brothers Homepage">
+              <img src="/images/logo-inverse.png" alt="WaFu Brothers" class="h-10 md:h-12 object-contain">WAFU
             </a>
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex items-center space-x-1 md:space-x-8">
-              <a href="../index.html"
+              <a href="/index.html"
                 class="text-gray-800 font-medium hover:text-secondary transition-colors px-2 py-1">الرئيسية</a>
     
               <!-- Product Center Dropdown -->
               <div class="relative group">
-                <a href="../products.html"
+                <a href="/products.html"
                   class="text-gray-800 font-medium hover:text-primary transition-colors flex items-center tracking-wide px-2 py-1">
                   المنتجات <i
                     class="fa fa-angle-down ml-1 text-xs transition-transform group-hover:rotate-180 duration-300"></i>
@@ -40,12 +45,12 @@
                 <div class="absolute left-0 mt-1 w-64 rounded-lg shadow-xl bg-white ring-1 ring-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible 
                                     transition-all duration-300 z-50 transform origin-top scale-95 group-hover:scale-100">
                   <div class="py-2">
-                    <a href="../products.html#Leak_detector"
+                    <a href="/products.html#Leak_detector"
                 class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">النطاق الكامل لكاشفات التسرب</a>
-            <a href="../products.html#Non-standard"
+            <a href="/products.html#Non-standard"
                 class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">
                 كاشف تسرب مخصص غير قياسي</a>
-            <a href="../products.html#Tooling"
+            <a href="/products.html#Tooling"
                 class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">تركيبات وأدوات كشف التسرب</a>
                   </div>
                 </div>
@@ -53,7 +58,7 @@
     
               <!-- Solutions Dropdown -->
               <div class="relative group">
-                <a href="../application.html"
+                <a href="/application.html"
                   class="text-primary font-medium hover:text-primary transition-colors flex items-center tracking-wide px-2 py-1">
                   حالات التطبيق <i
                     class="fa fa-angle-down ml-1 text-xs transition-transform group-hover:rotate-180 duration-300"></i>
@@ -61,36 +66,36 @@
                 <div class="absolute left-0 mt-1 w-64 rounded-lg shadow-xl bg-white ring-1 ring-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible 
                                     transition-all duration-300 z-50 transform origin-top scale-95 group-hover:scale-100">
                   <div class="py-2">
-                    <a href="../solu/solu-carparts.html"
+                    <a href="/solu/solu-carparts.html"
                       class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة قطع السيارات</a>
-                    <a href="../solu/solu-aerospace.html"
+                    <a href="/solu/solu-aerospace.html"
                       class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة الفضاء الجوي</a>
-                    <a href="../solu/solu-medical.html"
+                    <a href="/solu/solu-medical.html"
                       class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة الأجهزة الطبية</a>
-                    <a href="../solu/solu-battery.html"
+                    <a href="/solu/solu-battery.html"
                       class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة البطاريات</a>
-                    <a href="../solu/solu-food.html"
+                    <a href="/solu/solu-food.html"
                       class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة التعبئة والتغليف</a>
-                    <a href="../solu/solu-kitchen.html"
+                    <a href="/solu/solu-kitchen.html"
                       class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة الأجهزة المنزلية</a>
-                    <a href="../solu/solu-electronic.html"
+                    <a href="/solu/solu-electronic.html"
                       class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة الإلكترونيات</a>
-                    <a href="../solu/solu-pipeline.html"
+                    <a href="/solu/solu-pipeline.html"
                       class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صناعة خطوط الأنابيب</a>
-                    <a href="../solu/solu-hardware.html"
+                    <a href="/solu/solu-hardware.html"
                       class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">الأدوات والسباكة</a>
-                    <a href="../solu/solu-lighting.html"
+                    <a href="/solu/solu-lighting.html"
                       class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">الأمن والإضاءة</a>
                   </div>
                 </div>
               </div>
     
-              <a href="../about.html"
+              <a href="/about.html"
                 class="text-gray-800 font-medium hover:text-primary transition-colors tracking-wide px-2 py-1">معلومات عنا</a>
     
               <!-- Service Support Dropdown -->
               <div class="relative group">
-                <a href="../services.html"
+                <a href="/services.html"
                   class="text-gray-800 font-medium hover:text-primary transition-colors flex items-center tracking-wide px-2 py-1">
                   الخدمة والدعم <i
                     class="fa fa-angle-down ml-1 text-xs transition-transform group-hover:rotate-180 duration-300"></i>
@@ -98,13 +103,13 @@
                 <div class="absolute left-0 mt-1 w-64 rounded-lg shadow-xl bg-white ring-1 ring-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible 
                                     transition-all duration-300 z-50 transform origin-top scale-95 group-hover:scale-100">
                   <div class="py-2">
-                    <a href="../resource.html"
+                    <a href="/resource.html"
                       class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">مركز الموارد</a>
-                    <a href="../Allquestions.html"
+                    <a href="/Allquestions.html"
                       class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">الأسئلة الشائعة</a>
-                    <a href="../test-case.html"
+                    <a href="/test-case.html"
                       class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">صور الحالات</a>
-                    <a href="../digital.html"
+                    <a href="/digital.html"
                       class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all">فيديوهات الحالات</a>
                   </div>
                 </div>
@@ -131,7 +136,7 @@
                   ไทย</a>
                 </div>
               </div>
-              <a href="../contact.html"
+              <a href="/contact.html"
                 class="bg-primary hover:bg-secondary text-white font-medium py-2 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                 اتصل بنا
               </a>
@@ -149,7 +154,7 @@
         <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100 shadow-lg">
           <div class="container mx-auto px-4 py-3">
             <nav class="flex flex-col space-y-1 py-2">
-              <a href="../index.html"
+              <a href="/index.html"
                 class="block py-3 px-4 text-primary font-medium hover:bg-gray-50 rounded-md transition-colors">الرئيسية</a>
     
               <!-- Product Dropdown Mobile -->
@@ -159,12 +164,12 @@
                   المنتجات <i class="fa fa-plus text-xs transition-transform duration-300"></i>
                 </button>
                 <div class="mobile-dropdown-content hidden pl-6 mt-0 border-l-2 border-gray-100">
-                  <a href="../products.html#Leak_detector"
+                  <a href="/products.html#Leak_detector"
                 class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">النطاق الكامل لكاشفات التسرب</a>
-            <a href="../products.html#Non-standard"
+            <a href="/products.html#Non-standard"
                 class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">
                 كاشف تسرب مخصص غير قياسي</a>
-            <a href="../products.html#Tooling"
+            <a href="/products.html#Tooling"
                 class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">تركيبات وأدوات كشف التسرب</a>
                 </div>
               </div>
@@ -176,30 +181,30 @@
                   حالات التطبيق <i class="fa fa-plus text-xs transition-transform duration-300"></i>
                 </button>
                 <div class="mobile-dropdown-content hidden pl-6 mt-0 border-l-2 border-gray-100">
-                  <a href="../solu/solu-carparts.html"
+                  <a href="/solu/solu-carparts.html"
                     class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة قطع السيارات</a>
-                  <a href="../solu/solu-aerospace.html"
+                  <a href="/solu/solu-aerospace.html"
                     class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة الفضاء الجوي</a>
-                  <a href="../solu/solu-medical.html"
+                  <a href="/solu/solu-medical.html"
                     class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة الأجهزة الطبية</a>
-                  <a href="../solu/solu-battery.html"
+                  <a href="/solu/solu-battery.html"
                     class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة البطاريات</a>
-                  <a href="../solu/solu-food.html"
+                  <a href="/solu/solu-food.html"
                     class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة التعبئة والتغليف</a>
-                  <a href="../solu/solu-kitchen.html"
+                  <a href="/solu/solu-kitchen.html"
                     class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة الأجهزة المنزلية</a>
-                  <a href="../solu/solu-electronic.html"
+                  <a href="/solu/solu-electronic.html"
                     class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة الإلكترونيات</a>
-                  <a href="../solu/solu-pipeline.html"
+                  <a href="/solu/solu-pipeline.html"
                     class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">صناعة خطوط الأنابيب</a>
-                  <a href="../solu/solu-hardware.html"
+                  <a href="/solu/solu-hardware.html"
                     class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">الأدوات والسباكة</a>
-                  <a href="../solu/solu-lighting.html"
+                  <a href="/solu/solu-lighting.html"
                     class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">الأمن والإضاءة</a>
                 </div>
               </div>
     
-              <a href="../about.html"
+              <a href="/about.html"
                 class="block py-3 px-4 text-gray-800 hover:text-primary hover:bg-gray-50 rounded-md transition-colors">معلومات عنا</a>
     
               <!-- Service Support Mobile -->
@@ -209,11 +214,11 @@
                   الخدمة والدعم <i class="fa fa-plus text-xs transition-transform duration-300"></i>
                 </button>
                 <div class="mobile-dropdown-content hidden pl-6 mt-0 border-l-2 border-gray-100">
-                  <a href="../solu/solu-carparts.html"
+                  <a href="/solu/solu-carparts.html"
                     class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">مركز الموارد</a>
-                  <a href="../solu/solu-medical.html"
+                  <a href="/solu/solu-medical.html"
                     class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">الأسئلة الشائعة</a>
-                  <a href="../solu/solu-battery.html"
+                  <a href="/solu/solu-battery.html"
                     class="block py-2.5 px-4 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-r-md">مقالات تقنية</a>
                 </div>
               </div>
@@ -238,7 +243,7 @@
                   ไทย</a>
                 </div>
               </div>
-              <a href="../contact.html"
+              <a href="/contact.html"
                 class="block py-3 px-4 mt-2 text-center bg-primary text-white rounded-md hover:bg-secondary transition-colors">اتصل بنا</a>
     
     
@@ -247,208 +252,208 @@
         </div>
       </header>
 
-    <main class="flex-grow">
-      <!-- 大型横幅图片区域 -->
-      <section class="relative h-[50vh] md:h-[60vh] bg-cover bg-center flex items-center justify-center"
-        style="background-image: url('../images/contact-1920x600.jpg');">
-        <div class="absolute inset-0 bg-dark/50"></div>
-        <div class="relative z-10 text-center px-4">
-          <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold text-white mb-4">حالة اختبار صناعة قطع السيارات</h1>
+      <div class="bg-gray-100 py-2">
+        <div class="container mx-auto px-4 text-sm text-gray-500">
+            <a href="/index.html" class="hover:text-primary">الرئيسية</a> &gt;
+            <a href="/application.html" class="hover:text-primary">حالات الاختبار</a> &gt;
+            <a href="/solu/solu-carparts.html" class="hover:text-primary">صناعة قطع غيار السيارات</a> &gt;
+            <!-- 面包屑标题 -->
+            <span class="text-primary">دراسة حالة اختبار إحكام الهواء لمكوّنات مكيف السيارة</span>
         </div>
-      </section>
-      <section class="py-16 bg-white">
-        <div class="container mx-auto px-4 mb-6 md:mb-8">
-          <nav class="flex text-sm" aria-label="Breadcrumb">
-            <ol class="inline-flex items-center space-x-1 md:space-x-3">
-              <!-- Home -->
-              <li class="inline-flex items-center">
-                <a href="../index.html" class="text-gray-500 hover:text-blue-600 transition-colors duration-200">
-                  الرئيسية
-                </a>
-              </li>
-    
-              <!-- Separator -->
-              <li>
-                <div class="flex items-center">
-                  <svg class="w-4 h-4 mx-1.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                  </svg>
-                </div>
-              </li>
-              <li class="inline-flex items-center">
-                <a href="../application.html" class="text-gray-500 hover:text-blue-600 transition-colors duration-200">
-                  حالات التطبيق
-                </a>
-              </li>
-    
-              <!-- Separator -->
-              <li>
-                <div class="flex items-center">
-                  <svg class="w-4 h-4 mx-1.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                  </svg>
-                </div>
-              </li>
-              <li aria-current="page">
-                <span class="text-blue-600 font-medium">صناعة قطع السيارات</span>
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </section>
-      <section class="py-16 bg-white text-center">
-        <div class="container mx-auto px-4">
-          <p
-            class="text-[clamp(1.5rem,3vw,2rem)] leading-relaxed bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-8 shadow-sm">
-            يقدم Wafu Brothers دعمًا تقنيًا حاسمًا في اختبار التسرب لصناعة السيارات.
-            تُستخدم معدات الاختبار عالية الدقة الخاصة بهم على نطاق واسع في <strong class="text-primary">اختبارات إحكام
-              المحركات، علب التروس، أنظمة الوقود، أنظمة التكييف، وأنظمة الفرامل</strong>، مما يضمن عدم وجود تسرب في المكونات
-            الأساسية لتحسين أداء السيارة وسلامتها.
-            تدعم الشركة أيضًا اختبارات إحكام الهيكل لتحسين الراحة داخل المقصورة.
-            بتقنية وحلول متقدمة، يساعد Wafu Brothers صانعي السيارات على تلبية معايير البيئة والسلامة الصارمة، ليصبح شريكًا
-            مهمًا في الصناعة.
-          </p>
-        </div>
-      </section>
-      <section class="py-12 bg-neutral-50">
-        <div class="container mx-auto px-4">
-          <!-- 汽车空调部件 -->
-          <div
-            class="solution-item bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 mb-8 transform hover:-translate-y-1">
-            <div class="flex flex-col lg:flex-row">
-              <div class="lg:w-5/12 p-6 lg:p-8 flex flex-col justify-between">
-                <div>
-                  <h3 class="text-2xl font-bold mb-4 text-neutral-800">مكوّنات مكيف السيارة</h3>
-                  <div class="space-y-4 mb-6">
-                    <div class="flex items-start gap-3">
-                      <div class="w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center mt-0.5 flex-shrink-0">
-                        <i class="fa fa-times-circle text-secondary text-xs"></i>
-                      </div>
-                      <p class="text-neutral-600">
-                        يعتمد نظام تكييف السيارة على دائرة تبريد محكمة الإغلاق، وفي حال وجود تسرب طفيف في أي مكوّن، سيتسرّب
-                        المبرّد تدريجيًا، مما يؤدي مباشرة إلى تراجع كفاءة التبريد.
-                      </p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                      <div class="w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center mt-0.5 flex-shrink-0">
-                        <i class="fa fa-bolt text-secondary text-xs"></i>
-                      </div>
-                      <p class="text-neutral-600">
-                        يعمل نظام تكييف السيارة تحت ضغط موجب أو ضغط عالٍ، وإذا كان إحكام المكوّنات غير كافٍ، فقد يتسبب ذلك في عدم
-                        استقرار الضغط، وفي الحالات الشديدة قد يؤدي إلى تلف المكوّنات أو مخاطر تتعلق بالسلامة.
-                      </p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                      <div class="w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center mt-0.5 flex-shrink-0">
-                        <i class="fa fa-exclamation-triangle text-secondary text-xs"></i>
-                      </div>
-                      <p class="text-neutral-600">
-                        في الاستخدام الفعلي، تمرّ المكوّنات بدورات من درجات حرارة مرتفعة ومنخفضة، واهتزازات، وعمليات تقادم وغيرها
-                        من الظروف المعقّدة، وغالبًا ما تتضخّم العيوب البسيطة في الإحكام مع مرور الوقت.
-                      </p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                      <div class="w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center mt-0.5 flex-shrink-0">
-                        <i class="fa fa-user text-secondary text-xs"></i>
-                      </div>
-                      <p class="text-neutral-600">
-                        في حال حدوث تسرب في مكوّنات مكيف السيارة، قد تنشأ مخاطر تتعلق بالسلامة.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <a href="../solulist/carparts/AC-components.html"
-                  class="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition-all duration-300 transform hover:translate-x-1 shadow-md hover:shadow-lg">
-                  تعرّف على المزيد
-                  <i class="fa fa-arrow-right"></i>
-                </a>
-              </div>
-              <div class="lg:w-7/12 relative overflow-hidden h-64 lg:h-auto">
-                <a href="../solulist/carparts/AC-components.html">
-                  <img src="../images/solu/car/ACComponents/product.webp" alt="مكوّنات مكيف السيارة" title="مكوّنات مكيف السيارة"
-                    class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
-                </a>
-                <div class="absolute top-4 left-4 bg-secondary text-white text-sm font-medium px-3 py-1 rounded-full shadow-md">
-                  مكوّنات السيارات
-                </div>
-              </div>
-            </div>
-          </div>
+    </div>
 
-          <!-- 变速箱壳体 -->
-          <div
-            class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 mb-8">
-            <div class="flex flex-col lg:flex-row">
-              <div class="lg:w-5/12 p-6 lg:p-8 flex flex-col justify-between">
-                <div>
-                  <h3 class="text-2xl font-bold mb-4 text-neutral-800">غلاف ناقل الحركة</h3>
-                  <div class="space-y-4 mb-6">
-                    <div class="flex items-start gap-3">
-                      <div class="w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center mt-0.5 flex-shrink-0">
-                        <i class="fa fa-check text-secondary text-xs"></i>
-                      </div>
-                      <p class="text-neutral-600">
-                        يتم ملء ناقل الحركة بالزيت الذي يقوم بتشحيم التروس والمحامل والمكونات المتحركة الأخرى.
-                        إذا كان الغلاف يحتوي على تسربات دقيقة غير مكتشفة، فقد يؤدي ذلك إلى ارتفاع درجة الحرارة، تلف المكونات، أو
-                        حتى توقف ناقل الحركة عن العمل.
-                      </p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                      <div class="w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center mt-0.5 flex-shrink-0">
-                        <i class="fa fa-check text-secondary text-xs"></i>
-                      </div>
-                      <p class="text-neutral-600">
-                        عندما يفتقر غلاف ناقل الحركة إلى مانع تسرب كافٍ، قد تتسرب الرطوبة الخارجية أو مياه المطر أو مياه غسل
-                        السيارة إلى الداخل، مما يؤدي إلى امتصاص الزيت وتدهور أدائه، ويؤدي إلى تآكل التروس والمحامل الداخلية.
-                      </p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                      <div class="w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center mt-0.5 flex-shrink-0">
-                        <i class="fa fa-check text-secondary text-xs"></i>
-                      </div>
-                      <p class="text-neutral-600">
-                        مع استمرار ارتفاع معايير تصنيع السيارات الحديثة، يجب أيضًا تحسين دقة المكونات لتلبية متطلبات الأداء
-                        العامة.
-                        لذلك يجب أن يفي غلاف ناقل الحركة بمعايير التسرب المحددة.
-                      </p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                      <div class="w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center mt-0.5 flex-shrink-0">
-                        <i class="fa fa-check text-secondary text-xs"></i>
-                      </div>
-                      <p class="text-neutral-600">
-                        بالنسبة لمصنعي المعدات الأصلية والموردين، فإن إهمال اختبار التسرب قد يؤدي إلى مشاكل تسرب الزيت بعد
-                        التسليم، استدعاء المنتجات، زيادة الشكاوى بعد البيع، وإضرار بسمعة العلامة التجارية.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <a href="../solulist/carparts/transmission.html"
-                  class="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition-all duration-300 transform hover:translate-x-1 shadow-md hover:shadow-lg">
-                  تعرف على المزيد
-                  <i class="fa fa-arrow-right"></i>
-                </a>
-              </div>
-              <div class="lg:w-7/12 relative overflow-hidden h-64 lg:h-auto">
-                <a href="../solulist/carparts/transmission.html">
-                  <img src="../images/solu/car/transmission/product.webp" alt="غلاف ناقل الحركة" title="غلاف ناقل الحركة"
-                    class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
-                </a>
-                <div class="absolute top-4 left-4 bg-secondary text-white text-sm font-medium px-3 py-1 rounded-full shadow-md">
-                  غلاف ناقل الحركة
-                </div>
-              </div>
-            </div>
-</div>
 
-    
-    
+    <main class="container mx-auto px-4 py-8">
+        <div class="flex flex-col lg:flex-row gap-8">
+              <div class="lg:w-4/5 xl:w-4/5">
+                <!-- 文章 -->
+                <div class="bg-white rounded-xl shadow-sm p-6 mb-8">
+                  <!-- 标题 -->
+                   <h1 class="text-2xl font-bold mb-4 text-center">تسرب صغير، هل يمكن أن يتسبب في إعادة تصنيع دفعات كبيرة من مكوّنات مكيف السيارة؟</h1>
+                
+                  <!-- 一、产品概述 -->
+                  <h2 class="text-xl font-semibold mt-8 mb-4">أولاً: نظرة عامة على المنتج</h2>
+                  <p style="text-indent: 2em;">
+                    تُعد مكوّنات مكيف السيارة جزءًا أساسيًا من نظام تكييف الهواء في السيارة، وتُستخدم بشكل رئيسي لنقل المبرّد والتحكم فيه وتنفيذ عملية تبادل الحرارة. وتشمل المكوّنات الشائعة مجموعات الأنابيب، ووصلات التوصيل، وأجسام الصمامات، والهياكل. وخلال تشغيل المركبة، تتحمّل هذه المكوّنات تغيّرات الضغط، وتقلبات درجات الحرارة، والاهتزازات لفترات طويلة، مما يفرض متطلبات عالية على خصائص المواد، وقوة البنية، وجودة عمليات التصنيع.
+                  </p>
+                  
+                  
+                  
+                  <h2 class="text-xl font-semibold mt-8 mb-4">ثانياً: لماذا تحتاج مكوّنات مكيف السيارة إلى اختبار إحكام الهواء؟</h2>
+                  <p style="text-indent: 2em;" class="mb-4">
+                    أثناء عمل مكوّنات مكيف السيارة، تتعرّض لفترات طويلة إلى تغيّرات ضغط المبرّد، ودورات الحرارة والبرودة، واهتزازات المركبة، مما يتطلب مستوىً عاليًا جدًا من الإحكام والاستقرار البنيوي. وفي حال حدوث تسرب طفيف، فلن يؤثر ذلك فقط على <strong class="text-red-600">كفاءة التبريد، بل قد يؤدي أيضًا إلى أعطال في النظام وحتى مخاطر تتعلق بالسلامة</strong>. لذلك، أصبح إجراء اختبارات صارمة لإحكام الهواء لمكوّنات مكيف السيارة خلال عملية الإنتاج خطوة أساسية لضمان مطابقة جودة المنتج للمعايير.
+                  </p>
+                  <div class="overflow-x-auto mt-4">
+                    <table class="table table-bordered w-full">
+                      
+                      <tbody>
+                        <tr class="bg-red-50">
+                          <td class="border border-red-200 px-4 py-2"><strong>ضمان أداء التبريد</strong></td>
+                          <td class="border border-red-200 px-4 py-2">
+                            يعتمد نظام تكييف السيارة على دائرة تبريد محكمة الإغلاق. وفي حال وجود تسرب طفيف في أي مكوّن، سيتسرّب المبرّد تدريجيًا، مما يؤدي مباشرة إلى ضعف أداء التبريد أو حتى تعطّله بالكامل.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="border border-red-200 px-4 py-2"><strong>ضمان سلامة القيادة</strong></td>
+                          <td class="border border-red-200 px-4 py-2">
+                            يعمل نظام تكييف السيارة تحت ضغط موجب أو ضغط عالٍ. وإذا كان إحكام المكوّنات غير كافٍ، فقد يتسبب ذلك في عدم استقرار الضغط، وفي الحالات الشديدة قد يؤدي إلى تلف المكوّنات أو مخاطر تتعلق بالسلامة. ومن خلال اختبار إحكام الهواء، يمكن تقليل المخاطر المحتملة الناتجة عن التسرب بشكل فعّال.
+                          </td>
+                        </tr>
+                        <tr class="bg-red-50">
+                          <td class="border border-red-200 px-4 py-2"><strong>التكيّف مع ظروف التشغيل المعقّدة</strong></td>
+                          <td class="border border-red-200 px-4 py-2">
+                            في الاستخدام الفعلي، تمرّ مكوّنات مكيف السيارة بدورات من درجات حرارة مرتفعة ومنخفضة، واهتزازات، وعمليات تقادم وغيرها من الظروف المعقّدة. وغالبًا ما تتضخّم العيوب البسيطة في الإحكام مع مرور الوقت. ويساعد اختبار إحكام الهواء على استبعاد المنتجات ذات موثوقية الإحكام الضعيفة مسبقًا، مما يعزز من متانة المركبة على المدى الطويل.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="border border-red-200 px-4 py-2"><strong>متطلبات السلامة</strong></td>
+                          <td class="border border-red-200 px-4 py-2">
+                            في حال حدوث تسرب في مكوّنات مكيف السيارة، قد تنشأ مخاطر تتعلق بالسلامة. فبعض أنواع المبرّدات الصديقة للبيئة الحديثة تتمتع بقابلية اشتعال منخفضة، وقد يؤدي تسرّبها وملامستها لمصدر لهب إلى حدوث خطر.
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="rounded-lg overflow-hidden mt-6">
+                    <img src="/images/solu/car/ACComponents/product.webp" class="h-auto rounded shadow mx-auto" alt="مكوّنات مكيف السيارة" loading="lazy">
+                    <small class="text-gray-500 inline-block text-muted text-center w-full mt-2">الشكل 1: مخطط تصوري لمكوّنات مكيف السيارة</small>
+                  </div>
+        
+                  <h2 class="text-xl font-semibold mt-8 mb-4">ثالثاً: تصور الحل الأساسي</h2>
+                  <p style="text-indent: 2em;">
+                    المكوّنات التي خضعت لهذا الاختبار هي مكوّنات لمكيف السيارة مصنوعة من سبائك الألمنيوم بالصبّ بالضغط. وبسبب خصائص هذه العملية، قد تظهر بعد التشكيل عيوب مثل <strong>المسام الدقيقة أو الشقوق</strong> التي لا يمكن ملاحظتها بالعين المجردة. ويتركّز الاختبار على الجزء الرئيسي من المنتج. وبعد الاطلاع على حجم الإنتاج اليومي للعميل، ومن أجل ضمان توافق زمن الاختبار مع كفاءة الإنتاج، تم تصميم نظام اختبار <strong>بقناتين ومحطتي عمل مزدوجتين</strong>.
+                  </p>
+                  <p style="text-indent: 2em;margin-top: 10px;"><strong>صعوبات الاختبار:</strong> باعتبار مكوّنات مكيف السيارة عناصر توصيل رئيسية، فهي تحتوي على عدة منافذ بأحجام وأنواع مختلفة.</p>
+                  <p style="text-indent: 2em; margin-top: 10px;"><strong>الحل:</strong> تصميم سدادات مخصّصة لإغلاق كل منفذ على حدة.</p>
+                  <div class="rounded-lg overflow-hidden mt-6">
+                    <img src="/images/solu/car/ACComponents/fixture.webp" class="h-auto rounded shadow mx-auto" alt="أداة تثبيت لإحكام غلق المنتج" loading="lazy">
+                    <small class="text-gray-500 inline-block text-muted text-center w-full mt-2">الشكل 2: أداة التثبيت المستخدمة لإحكام غلق المنتج</small>
+                  </div>
+                  
+                  
+                  
+                  <h2 class="text-xl font-semibold mt-8 mb-4">رابعاً: المنتج النهائي</h2>
+                  <p class="mt-6" style="text-indent: 2em;">
+                   نظرًا لارتفاع متطلبات ضغط الاختبار لدى العميل، لم تتمكن 
+                   <a href="/products.html#Leak_detector" target="_blank" class="text-indigo-600 font-bold hover:text-indigo-800 hover:underline transition">
+                    أجهزة اختبار إحكام الهواء المكتبية
+                   </a>
+                   التقليدية من تلبية متطلبات الاختبار. لذلك، اعتمدنا 
+                   <a href="/products.html#Non-standard" target="_blank" class="text-indigo-600 font-bold hover:text-indigo-800 hover:underline transition">
+                    جهاز اختبار إحكام هواء مخصص غير قياسي بنظام خزانة
+                   </a>
+                   لتلبية احتياجات الاختبار تحت ضغط عالٍ.
+                  </p>
+                  <div class="rounded-lg overflow-hidden mt-6">
+                    <img src="/images/solu/car/ACComponents/device.webp" class="h-auto rounded shadow mx-auto" alt="جهاز اختبار إحكام الهواء المخصص بنظام خزانة من WAFU Brothers">
+                    <small class="text-gray-500 inline-block text-muted text-center w-full mt-2">الشكل 3: جهاز اختبار إحكام الهواء المخصص بنظام خزانة من WAFU Brothers</small>
+                  </div>
+                  
+                  
+                  <!-- 视频 -->
+                  <h2 class="text-xl font-semibold mt-8 mb-4">خامساً: عملية الاختبار</h2>
+                  <p style="text-indent: 2em;">
+                  تم اعتماد 
+                  <a href="/faq/T-art-15.html#methood" target="_blank" class="text-indigo-600 font-bold hover:text-indigo-800 hover:underline transition">
+                    طريقة الضغط الموجب
+                  </a>
+                  في الاختبار، حيث بلغ ضغط الاختبار <strong>2000 كيلوباسكال</strong>، وحدّ التسرب المسموح به ± <strong>0.05 كيلوباسكال</strong>.
+                  </p>
+                    <ul style="text-indent: 2em; font-weight: bold; margin-top: 10px; line-height: 2;">
+                      <li>1.&nbsp;وضع المنتج المراد اختباره بشكل صحيح في محطة الاختبار المخصّصة داخل أداة التثبيت.</li>
+                      <li style="padding-top: 10px;">2.&nbsp;يمكن بدء برنامج الاختبار بالضغط على زر التشغيل الموجود على يسار الشاشة، أو زر التشغيل على لوحة الأزرار، أو زر التشغيل الافتراضي داخل الشاشة. يتحكم الزر الفعلي على يسار الشاشة بجميع القنوات، بينما تتحكم أزرار لوحة التشغيل والأزرار الافتراضية في القنوات المقابلة لكل منها.</li>
+                      <li style="padding-top: 10px;">3.&nbsp;تقوم أداة التثبيت بالضغط المتزامن إلى الموضع المحدد لإحكام غلق المنتج، ثم يبدأ ضخ غاز الاختبار إلى داخل المنتج.</li>
+                      <li style="padding-top: 10px;">4.&nbsp;ينفّذ النظام تلقائيًا برنامج الاختبار الكامل، والذي يشمل مراحل التعبئة، وتثبيت الضغط، والاختبار، والتفريغ على التوالي.</li>
+                      <li style="padding-top: 10px;">5.&nbsp;بعد اكتمال الاختبار، تعرض شاشة الجهاز النتيجة: يظهر PASS للمنتج المطابق، وFAIL للمنتج غير المطابق. وفي الوقت نفسه، تتزامن حالة مؤشرات الأزرار مع نتيجة الاختبار، ويمكن تفعيل منبّه صوتي للتنبيه عند وجود منتجات غير مطابقة.</li>
+                    </ul>
+                  
+                    
+                  </p>
+                  
+                </div>
+              
+              </div>
+              
+              
+
+            <!-- Right Side: Recommended Content -->
+            <aside class="lg:w-2/5 xl:w-2/5">
+                <div class="space-y-6">
+                    <div class="bg-white rounded-xl shadow-sm p-6">
+                        <h3 class="text-lg font-bold mb-4 pb-2 border-b border-gray-100">الحلول ذات الصلة</h3>
+
+                        <div class="space-y-4">
+                            <a href="./obc.html" class="block group">
+                                <div class="rounded-lg overflow-hidden mb-2">
+                                    <img src="/images/solu/car/solu car1.jpg"
+                                        alt="حل اختبار إحكام لأجهزة الشحن على متن المركبات"
+                                        class="w-full h-32 object-cover transition-transform duration-500 group-hover:scale-105">
+                                </div>
+                                <h4 class="font-medium group-hover:text-primary transition-colors">حل اختبار إحكام لأجهزة الشحن على متن المركبات</h4>
+                            </a>
+
+                            <a href="./Dashcam.html" class="block group">
+                                <div class="rounded-lg overflow-hidden mb-2">
+                                    <img src="/images/solu/car/solu car3.jpg"
+                                        alt="حل اختبار إحكام لمستشعرات مراقبة القيادة"
+                                        class="w-full h-32 object-cover transition-transform duration-500 group-hover:scale-105">
+                                </div>
+                                <h4 class="font-medium group-hover:text-primary transition-colors">حل اختبار إحكام لمستشعرات مراقبة القيادة</h4>
+                            </a>
+
+                            <a href="./Trocar.html" class="block group">
+                                <div class="rounded-lg overflow-hidden mb-2">
+                                    <img src="/images/solu/medical/solu medical1.jpg"
+                                        alt="حل اختبار إحكام لثقابات منظار البطن"
+                                        class="w-full h-32 object-cover transition-transform duration-500 group-hover:scale-105">
+                                </div>
+                                <h4 class="font-medium group-hover:text-primary transition-colors">حل اختبار إحكام لثقابات منظار البطن</h4>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-neutral rounded-xl shadow-sm p-6">
+                        <h3 class="text-lg font-bold mb-3">اتصل بنا</h3>
+                        <p class="mb-4 text-gray-600">احصل على مزيد من المعلومات حول اختبار إحكام الليدار</p>
+
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center">
+                                <div
+                                    class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary mr-3">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <span>17376311087</span>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div
+                                    class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary mr-3">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <span>wafubrother@outlook.com</span>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div
+                                    class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary mr-3">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                <span>الطابق الثاني، مبنى 6، حديقة شاي الصناعية البيئية، رقم 496، طريق تشوانغتشنغ، شارع شاجينغ، منطقة باوان، شنتشن</span>
+                            </div>
+                        </div>
+
+                        <a href="/content.html"
+                            class="block w-full bg-primary hover:bg-primary/90 text-white text-center py-2 rounded-lg transition-colors font-medium">
+                            استشارة عبر الإنترنت
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
         </div>
-      </section>
     </main>
-    
+
     <footer class="bg-white border-t border-gray-200 text-gray-800 pt-16 pb-8">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-12">
@@ -498,30 +503,30 @@
                         <i class="fa fa-link text-primary mr-2"></i>روابط سريعة
                     </h3>
                     <ul class="space-y-3">
-                        <li><a href="../index.html"
+                        <li><a href="/index.html"
                                 class="text-gray-600 hover:text-primary transition-colors flex items-center group">
                                 <i
                                     class="fa fa-angle-right mr-2 text-primary text-xs transform group-hover:translate-x-1 transition-transform"></i>الرئيسية</a>
                         </li>
-                        <li><a href="../products.html"
+                        <li><a href="/products.html"
                                 class="text-gray-600 hover:text-primary transition-colors flex items-center group">
                                 <i
                                     class="fa fa-angle-right mr-2 text-primary text-xs transform group-hover:translate-x-1 transition-transform"></i>المنتجات</a>
                         </li>
-                        <li><a href="../application.html"
+                        <li><a href="/application.html"
                                 class="text-gray-600 hover:text-primary transition-colors flex items-center group">
                                 <i
                                     class="fa fa-angle-right mr-2 text-primary text-xs transform group-hover:translate-x-1 transition-transform"></i>حالات التطبيق</a></li>
-                        <li><a href="../about.html"
+                        <li><a href="/about.html"
                                 class="text-gray-600 hover:text-primary transition-colors flex items-center group">
                                 <i
                                     class="fa fa-angle-right mr-2 text-primary text-xs transform group-hover:translate-x-1 transition-transform"></i>معلومات عنا</a></li>
-                        <li><a href="../services.html"
+                        <li><a href="/services.html"
                                 class="text-gray-600 hover:text-primary transition-colors flex items-center group">
                                 <i
                                     class="fa fa-angle-right mr-2 text-primary text-xs transform group-hover:translate-x-1 transition-transform"></i>الدعم</a>
                         </li>
-                        <li><a href="../contact.html"
+                        <li><a href="/contact.html"
                                 class="text-gray-600 hover:text-primary transition-colors flex items-center group">
                                 <i
                                     class="fa fa-angle-right mr-2 text-primary text-xs transform group-hover:translate-x-1 transition-transform"></i>اتصل بنا</a></li>
@@ -534,34 +539,34 @@
                         <i class="fa fa-cube text-primary mr-2"></i>فئات المنتجات
                     </h3>
                     <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-4">
-                        <li><a href="../products/product-one.html"
+                        <li><a href="/products/product-one.html"
                                 class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
                                     class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>كاشف تسرب متعدد الوظائف</a></li>
-                        <li><a href="../products/product-two.html"
+                        <li><a href="/products/product-two.html"
                                 class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
                                     class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>كاشف تسرب متعدد القنوات</a></li>
-                        <li><a href="../products/product-three.html"
+                        <li><a href="/products/product-three.html"
                                 class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
                                     class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>كاشف تسرب تدفق HF</a></li>
-                        <li><a href="../products/product-four.html"
+                        <li><a href="/products/product-four.html"
                                 class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
                                     class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>كاشف تسرب الضغط التفاضلي</a></li>
-                        <li><a href="../products/product-five.html"
+                        <li><a href="/products/product-five.html"
                                 class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
                                     class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>كاشف تسرب الضغط المباشر</a></li>
-                        <li><a href="../products/product-six.html"
+                        <li><a href="/products/product-six.html"
                                 class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
                                     class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>تركيبات إحكام مكتبية</a></li>
-                        <li><a href="../products/product-seven.html"
+                        <li><a href="/products/product-seven.html"
                                 class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
                                     class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>كاشف تسرب نوع خزانة</a></li>
-                        <li><a href="../products/product-eight.html"
+                        <li><a href="/products/product-eight.html"
                                 class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
                                     class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>تركيبات نوع خزانة</a></li>
-                        <li><a href="../products/product-nine.html"
+                        <li><a href="/products/product-nine.html"
                                 class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
                                     class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>كاشف تسرب مخصص</a></li>
-                        <li><a href="../products/leak-tester-allinone.html"
+                        <li><a href="/products/leak-tester-allinone.html"
                                 class="text-gray-600 hover:text-primary transition-colors flex items-center group"><i
                                     class="fa fa-angle-right mr-2 text-primary text-xs group-hover:translate-x-1 transition-transform"></i>نظام اختبار تسرب متكامل</a></li>
                     </ul>
@@ -607,11 +612,11 @@
                         &copy; 2025 WaFu Brothers (Shenzhen) Automation Technology Co., Ltd. جميع الحقوق محفوظة
                     </p>
                     <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
-                        <a href="../sitemap.html"
+                        <a href="/sitemap.html"
                             class="text-gray-500 hover:text-primary text-sm transition-colors">خريطة الموقع</a>
-                        <a href="../contact.html"
+                        <a href="/contact.html"
                             class="text-gray-500 hover:text-primary text-sm transition-colors">الدعم الفني</a>
-                        <a href="../faq/dual-channel-10inch-kunlun-screen-leak-tester-manual.pdf"
+                        <a href="/faq/dual-channel-10inch-kunlun-screen-leak-tester-manual.pdf"
                             class="text-gray-500 hover:text-primary text-sm transition-colors">دليل المستخدم</a>
                     </div>
                 </div>
@@ -622,8 +627,8 @@
         class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:bg-primary/90">
         <i class="fa fa-arrow-up"></i>
     </button>
-    <script src="../js/script.js"></script>
-    <script src="../js/tailwind.config.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/tailwind.config.js"></script>
 </body>
 <script src="/js/ar.js"></script>
 </html>
