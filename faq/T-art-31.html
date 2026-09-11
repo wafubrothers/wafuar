@@ -5,14 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>كيفية اختيار أفضل جهاز اختبار التسرب | دليل شراء جهاز اختبار إحكام الإغلاق مع 5 عوامل أساسية</title>
+    <title>هل يمكن لجهاز اختبار إحكام الهواء إجراء اختبار تسرب الفراغ؟ مبدأ وتطبيق اختبار الضغط السلبي</title>
     <meta name="description"
-        content="هل تبحث عن أفضل جهاز اختبار تسرب أو جهاز اختبار إحكام الإغلاق؟ يقدّم لك هذا الدليل الشامل خمسة عوامل أساسية يجب أخذها في الاعتبار لتجنب الأخطاء المكلفة وضمان دقة اكتشاف التسرب، واختبار مقاومة الماء، والتحكم الموثوق بالجودة.">
+        content="تعرف على كيفية إجراء اختبار تسرب الفراغ باستخدام طريقة الضغط السلبي. يشرح هذا المقال مبدأ اختبار التسرب بالفراغ، وطريقة مراقبة تغير الضغط، وخطوات الاختبار، والمنتجات المناسبة، والعوامل المهمة للحصول على نتائج دقيقة وموثوقة.">
     <meta name="keywords"
-        content="أفضل جهاز اختبار تسرب، دليل شراء جهاز اختبار إحكام الإغلاق، جهاز اختبار مقاومة الماء، كشف التسرب، اختبار IP67 IP68، الاختبار غير التدميري، اختيار المعدات">
-
-
-
+        content="كيفية إجراء اختبار تسرب الفراغ, كيفية اختبار تسرب الفراغ للمنتجات المحكمة الإغلاق, طريقة اختبار تسرب الفراغ باستخدام الضغط السلبي, مبدأ اختبار التسرب بالفراغ وتغير الضغط, كيفية اكتشاف تسرب الهواء باستخدام الضغط السلبي, طريقة الكشف عن تسرب المنتجات باستخدام الفراغ, خطوات إجراء اختبار تسرب الفراغ, اختبار إحكام المنتجات باستخدام الضغط السلبي, اختبار تسرب المكونات المحكمة الإغلاق بالفراغ, كيفية عمل اختبار تسرب الفراغ بالضغط السلبي, طريقة اختبار انخفاض الضغط للكشف عن تسرب الفراغ, اختبار Vacuum Decay للكشف عن التسرب, اختبار التسرب بالضغط السلبي للمكونات الصناعية, معدات اختبار تسرب الفراغ للمنتجات المحكمة الإغلاق, مقارنة اختبار التسرب بالضغط الموجب والضغط السالب">
     <script src="/js/tailwind.js"></script>
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <link href="/css/tailwindcss.css" rel="stylesheet">
@@ -42,61 +39,63 @@
     </script>
     <style type="text/tailwindcss">
         @layer utilities {
-            .content-auto {
-                content-visibility: auto;
+                .content-auto {
+                    content-visibility: auto;
+                }
+                .text-balance {
+                    text-wrap: balance;
+                }
+                .reading-progress {
+                    height: 3px;
+                    background-color: theme('colors.primary');
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 0%;
+                    z-index: 50;
+                    transition: width 0.1s ease;
+                }
+                .fade-in {
+                    animation: fadeIn 0.6s ease-in-out;
+                }
+                @keyframes fadeIn {
+                    from { opacity: 0; transform: translateY(10px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+                .markdown-content h2 {
+                    @apply text-2xl font-semibold text-dark mt-8 mb-4 scroll-mt-20;
+                }
+                .markdown-content h3 {
+                    @apply text-xl font-medium text-dark mt-6 mb-3 scroll-mt-20;
+                }
+                .markdown-content p {
+                    @apply text-gray-700 mb-4 leading-relaxed;
+                }
+                .markdown-content ul {
+                    @apply list-disc pl-5 mb-4 space-y-2;
+                }
+                .markdown-content ol {
+                    @apply list-decimal pl-5 mb-4 space-y-2;
+                }
+                .markdown-content img {
+                    @apply rounded-lg shadow-md max-w-full mx-auto my-6;
+                }
+                .markdown-content blockquote {
+                    @apply border-l-4 border-primary pl-4 italic text-gray-600 my-4;
+                }
+                .markdown-content code {
+                    @apply bg-neutral px-1 py-0.5 rounded text-sm font-mono;
+                }
             }
-            .text-balance {
-                text-wrap: balance;
-            }
-            .reading-progress {
-                height: 3px;
-                background-color: theme('colors.primary');
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 0%;
-                z-index: 50;
-                transition: width 0.1s ease;
-            }
-            .fade-in {
-                animation: fadeIn 0.6s ease-in-out;
-            }
-            @keyframes fadeIn {
-                from { opacity: 0; transform: translateY(10px); }
-                to { opacity: 1; transform: translateY(0); }
-            }
-            .markdown-content h2 {
-                @apply text-2xl font-semibold text-dark mt-8 mb-4 scroll-mt-20;
-            }
-            .markdown-content h3 {
-                @apply text-xl font-medium text-dark mt-6 mb-3 scroll-mt-20;
-            }
-            .markdown-content p {
-                @apply text-gray-700 mb-4 leading-relaxed;
-            }
-            .markdown-content ul {
-                @apply list-disc pl-5 mb-4 space-y-2;
-            }
-            .markdown-content ol {
-                @apply list-decimal pl-5 mb-4 space-y-2;
-            }
-            .markdown-content img {
-                @apply rounded-lg shadow-md max-w-full mx-auto my-6;
-            }
-            .markdown-content blockquote {
-                @apply border-l-4 border-primary pl-4 italic text-gray-600 my-4;
-            }
-            .markdown-content code {
-                @apply bg-neutral px-1 py-0.5 rounded text-sm font-mono;
-            }
-        }
-    </style>
-
-    <!-- 多语言声明 -->
-    <link rel="alternate" hreflang="zh-CN" href="https://www.wafubrother.cn/index.html" />
-    <link rel="alternate" hreflang="en" href="https://www.wafubrother.com/index.html" />
-    <link rel="alternate" hreflang="vi" href="https://www.wafuvn.com/index.html" />
-    <link rel="alternate" hreflang="th" href="https://www.wafuth.com/index.html" />
+        </style>
+    <!-- 规范链接 -->
+    <link rel="canonical" href="https://www.wafuar.com/faq/T-art-31">
+     <!-- 多语言声明 -->
+     <link rel="alternate" hreflang="zh-CN" href="https://www.wafubrother.cn/faq/T-art-31.html" />
+    <link rel="alternate" hreflang="en" href="https://www.wafubrother.com/faq/T-art-31.html" />
+    <link rel="alternate" hreflang="vi" href="https://www.wafuvn.com/faq/T-art-31.html" />
+    <link rel="alternate" hreflang="th" href="https://www.wafuth.com/faq/T-art-31.html" />
+    <link rel="alternate" hreflang="ar" href="https://www.wafuar.com/faq/T-art-31.html" />
 </head>
 
 <body class="font-inter text-gray-800 bg-white">
@@ -352,121 +351,151 @@
                 <li class="mx-2"><i class="fa fa-angle-right text-xs"></i></li>
                 <li><a href="/resource.html" class="hover:text-primary transition-colors duration-200">المقالات التقنية</a></li>
                 <li class="mx-2"><i class="fa fa-angle-right text-xs"></i></li>
-                <li class="text-gray-700"><strong class="text-blue-600">جهاز اختبار التسرب</strong> – دليل الشراء: خمسة مؤشرات أساسية لا يمكنك تجاهلها</li>
+                <li class="text-gray-700">  
+                    هل يمكن لجهاز اختبار إحكام الهواء إجراء اختبار تسرب الفراغ؟ مبدأ وتطبيق اختبار الضغط السلبي بالفراغ
+                </li>
+
             </ol>
         </nav>
         
         <div class="flex flex-col lg:flex-row gap-8">
             <article class="w-full lg:w-2/3 bg-white rounded-xl shadow-article p-6 md:p-8 fade-in">
                 <header class="mb-8">
-                    <h1 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-dark leading-tight text-balance mb-4">
-                        <strong class="text-blue-600">جهاز اختبار التسرب</strong> – دليل الشراء: خمسة مؤشرات أساسية لا يمكنك تجاهلها
-                    </h1>
-                    <div class="flex flex-wrap items-center text-sm text-gray-500 space-x-4">
-                        <span><i class="fa fa-calendar-o mr-1"></i> 13 سبتمبر 2025</span>
-                        <span><i class="fa fa-user-o mr-1"></i> WaFubrother</span>
-                        <span><i class="fa fa-tag mr-1"></i> اختبار الإحكام، دليل الشراء</span>
+                    <h1 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-dark leading-tight mb-4"> 
+                        <!-- 文章标题 --> 
+
+                        <strong class="text-blue-600">جهاز اختبار إحكام الهواء</strong> هل يمكنه أيضًا إجراء <strong class="text-blue-600">اختبار تسرب الفراغ</strong>؟ مبدأ وتطبيق <strong class="text-blue-600">اختبار الضغط السلبي</strong> بالفراغ
+                         
+                    </h1> 
+                    <div class="flex flex-wrap items-center text-sm text-gray-500 space-x-4"> 
+                        <span><i class="fa fa-calendar-o mr-1"></i> 10 سبتمبر 2026</span> 
+                        <span><i class="fa fa-user-o mr-1"></i>WaFubrother</span> 
+                        <span><i class="fa fa-tag mr-1"></i>اختبار تسرب الفراغ, اختبار الضغط السلبي بالفراغ</span> 
                     </div>
                 </header>
+                
         
-                <div class="markdown-content">
-                    <p class="text-base" style="text-indent: 2em;">
-                        في الإنتاج الصناعي — وخاصة في مجالات مثل السيارات الجديدة للطاقة، الأجهزة الطبية، الإلكترونيات الاستهلاكية، الأجهزة المنزلية، وصناعة الطيران — تُعد إحكامية المنتجات (مقاومة الماء / الأداء المحكم) مؤشراً أساسياً للجودة. إن اختيار جهاز اختبار تسرب مناسب وموثوق يؤثر مباشرة على جودة المنتج وتكلفة الإنتاج وكفاءة التشغيل. ومع تنوع المنتجات في السوق وأساليب التسويق المقنعة، كيف يمكنك تجنب الأخطاء واختيار الجهاز الأنسب؟ في هذا المقال نكشف لك خمسة مؤشرات رئيسية يجب التركيز عليها عند اختيار الجهاز.
-                    </p>
-                    <img src="../images/services/faq/faq_16.jpg" alt="Buying Guide" title="Buying Guide">
-        
-                    <h2>1. دقة الكشف والوضوح</h2>
-                    <h4>لماذا يعتبر هذا مهماً؟</h4>
-                    <p class="text-base" style="text-indent: 2em;">
-                        الدقة والوضوح هما روح جهاز اختبار التسرب، فهما يحددان ما إذا كان الجهاز قادرًا على اكتشاف التسربات الدقيقة. عدم كفاية الدقة قد يؤدي إلى الحكم على المنتجات الجيدة بأنها غير صالحة (رفض خاطئ)، أو تمرير منتجات غير صالحة (قبول خاطئ)، مما يؤدي إلى خسائر كبيرة.
-                    </p>
-                    <h4>كيفية تجنب الأخطاء:</h4>
-                    <ul>
-                        <li>فرّق بين "الوضوح" و"الدقة": الوضوح هو أصغر قيمة يمكن للجهاز عرضها (مثل 0.1 باسكال)، بينما الدقة تمثل الانحراف بين القيمة المقاسة والقيمة الحقيقية (مثل ±1 باسكال). كثير من مندوبي المبيعات يبالغون في الوضوح ويتجنبون الحديث عن الدقة. اسأل دائماً: “ما هي الدقة ضمن كامل نطاق القياس؟”</li>
-                        <li>قارن احتياجاتك: ما هو معدل التسرب المسموح به لمنتجك؟ إذا كان معيار المنتج هو 5 باسكال/دقيقة، يجب أن تكون دقة الجهاز ±1 باسكال أو أفضل لضمان دقة الحكم. لا تدفع تكلفة إضافية لدقة أعلى مما تحتاجه.</li>
-                        <li>اطلب اختباراً فعلياً: استخدم قطعة عمل بها ثقب تسرب معياري (بقيمة تسرب دقيقة معروفة)، واختبر بالجهاز. تحقق من التكرارية والتوافق مع القيمة القياسية.</li>
-                    </ul>
-        
-                    <h2>2. كفاءة الكشف (زمن الدورة)</h2>
-                    <h4>لماذا يعتبر هذا مهماً؟</h4>
-                    <p class="text-base" style="text-indent: 2em;">
-                        كفاءة الكشف تؤثر مباشرة على زمن دورة خط الإنتاج. الجهاز البطيء يصبح عنق زجاجة، مما يقلل كفاءة الإنتاج العامة.
-                    </p>
-                    <h4>كيفية تجنب الأخطاء:</h4>
-                    <ul>
-                        <li>افهم زمن عملية الاختبار: تتضمن دورة اختبار الإحكام الكاملة التضخيم، الاستقرار، الكشف، والتفريغ. اسأل عن زمن كل مرحلة والزمن الإجمالي بالثواني.</li>
-                        <li>تأكد من توافق الطاقة الإنتاجية: بناءً على دورة الإنتاج (مثل 30 ثانية لكل وحدة)، اطلب من المورد إثبات أنه يمكنه إكمال الاختبار وإخراج النتيجة خلال الزمن الموعود.</li>
-                        <li>انتبه لزمن “الاستقرار”: مرحلة استقرار الضغط بعد التضخيم تستهلك معظم الوقت. الأجهزة ذات الخوارزميات المتقدمة تقلل زمن الاستقرار، مما يحسن效率.</li>
-                    </ul>
-        
-                    <h2>3. الاستقرار وقابلية التكرار</h2>
-                    <h4>لماذا يعتبر هذا مهماً؟</h4>
-                    <p class="text-base" style="text-indent: 2em;">
-                        يشير الاستقرار إلى قدرة الجهاز على الحفاظ على الدقة أثناء التشغيل طويل المدى؛ وتشير قابلية التكرار إلى اتساق النتائج عند اختبار نفس القطعة مرات متعددة. وهما الأساس لضمان جودة ثابتة على المدى الطويل.
-                    </p>
-                    <h4>كيفية تجنب الأخطاء:</h4>
-                    <ul>
-                        <li>اسأل عن ماركة حساس الضغط: فهو المكوّن الأهم ويحدد الاستقرار. معرفة العلامة (مثل MEAS الأمريكية أو First Sensor الألمانية) يساعدك في تقييم مستوى الجهاز.</li>
-                        <li>اطلب تقرير تكرارية: المصنّعون الموثوقون يوفرون تقارير مبنية على المعايير الوطنية أو الصناعية، مثل نتائج 10 اختبارات متتالية مع الانحراف المعياري.</li>
-                        <li>اطلع على حالات العملاء: تحقق من استخدام الجهاز في ظروف مشابهة لضمان الأداء على المدى الطويل.</li>
-                    </ul>
-        
-                    <h2>4. ميزات البرنامج والذكاء</h2>
-                    <h4>لماذا يعتبر هذا مهماً؟</h4>
-                    <p class="text-base" style="text-indent: 2em;">
-                        أجهزة اختبار التسرب الحديثة ليست مجرد أجهزة، بل برامج أيضاً. البرنامج الجيد يحسن سهولة الاستخدام، تتبع البيانات، ومستوى الأتمتة.
-                    </p>
-                    <h4>كيفية تجنب الأخطاء:</h4>
-                    <ul>
-                        <li>قيّم واجهة الاستخدام: هل النظام معرب بالكامل؟ هل منطق التشغيل واضح؟ هل إعداد المعايير سهل؟ اطلب عرضاً حياً.</li>
-                        <li>تحقق من قدرات إدارة البيانات: هل يسجّل الجهاز كل نتائج الاختبار تلقائياً؟ هل يمكن تصدير البيانات إلى Excel أو CSV؟ هذا مهم لتتبع الجودة والتحليل الإحصائي.</li>
-                        <li>انتبه لواجهات الاتصال: هل يدعم RS485، Ethernet، Modbus، Profinet؟ هذا يحدد ما إذا كان يمكن دمجه في خط الإنتاج أو نظام MES.</li>
-                    </ul>
-        
-                    <h2>5. تصميم الجيج والتركيبات</h2>
-                    <h4>لماذا يعتبر هذا مهماً؟</h4>
-                    <p class="text-base" style="text-indent: 2em;">
-                        “ثلاثة أجزاء جهاز، سبعة أجزاء تجهيزة.” حتى أدق جهاز يصبح عديم الفائدة إذا كان تصميم التركيبة سيئاً ويسبب تسرباً إضافياً.
-                    </p>
-                    <h4>كيفية تجنب الأخطاء:</h4>
-                    <ul>
-                        <li>تأكد من موثوقية الإحكام: طريقة الإغلاق (مثل المكبس الهوائي، الحلقة السيليكونية) يجب أن تمنع أي تسرب إضافي.</li>
-                        <li>تحكم في حجم الاختبار: يجب أن يكون حجم الحجرة الداخلية صغيراً قدر الإمكان ومتوافقاً مع الحجم المستخدم في معايرة الجهاز.</li>
-                        <li>اطلب تصميمًا متكاملاً: الموردون الذين يقدمون الجهاز والتركيبة معاً يقللون المشكلات المستقبلية.</li>
-                    </ul>
-        
-                    <h2>الخلاصة والتوصيات</h2>
-                    <p class="text-base" style="text-indent: 2em;">
-                        شراء جهاز اختبار تسرب هو استثمار تقني — لا تعتمد على السعر فقط. تذكّر المؤشرات الخمسة التالية:
-                    </p>
-                    <ul>
-                        <li>الدقة والوضوح — الأساس.</li>
-                        <li>كفاءة الكشف — حاسمة لخط الإنتاج.</li>
-                        <li>الاستقرار والتكرار — جوهر الأداء.</li>
-                        <li>ذكاء البرنامج — قيمة مضافة.</li>
-                        <li>التركيبات — ضمان النتائج الموثوقة.</li>
-                    </ul>
-                    <p class="text-base" style="text-indent: 2em;">
-                        أفضل طريقة لتجنب الأخطاء هي إجراء اختبار فعلي باستخدام عيناتك. خذ القطع الخاصة بك إلى المورد واطلب العرض الفعلي، ثم قيّم الأداء وفق المؤشرات الخمسة لاتخاذ القرار الأكثر دقة وموثوقية.
-                    </p>
-        
+                <!-- 文章内容 -->
+                <div class="markdown-content"> 
+                    <p class="text-base" style="text-indent: 2em;"> 
+                        عند الحديث عن <strong style="background: linear-gradient(transparent 50%,  #bfedfa  50%); border-radius: 4px;">جهاز اختبار إحكام الهواء</strong>، يعتقد الكثيرون أولًا أنه يُستخدم <strong style="background: linear-gradient(transparent 50%,  #bfedfa  50%); border-radius: 4px;">لإدخال الهواء المضغوط إلى داخل المنتج</strong>، ثم تحديد ما إذا كان المنتج يعاني من تسرب من خلال مراقبة تغير الضغط. في الواقع، بالإضافة إلى طريقة الاختبار بالضغط الموجب الشائعة، يمكن لجهاز اختبار إحكام الهواء أيضًا <strong style="background: linear-gradient(transparent 50%,  #bfedfa  50%); border-radius: 4px;">استخدام طريقة التفريغ بالضغط السلبي لإجراء اختبار تسرب الفراغ للمنتج</strong>. 
+                    </p> 
+                    <p class="text-base" style="text-indent: 2em;"> 
+                        بالنسبة للمنتجات التي لا تناسبها ضغوط الاختبار الموجبة أو التي تعمل فعليًا في ظروف ضغط سلبي، فإن الاختبار بالضغط السلبي يكون غالبًا أكثر توافقًا مع ظروف الاستخدام الفعلية. 
+                    </p> 
+ 
+                     
+                 
+                 
+                    <h2>1. ما هو اختبار إحكام الهواء بالتفريغ والضغط السلبي؟</h2> 
+                    <p class="text-base" style="text-indent: 2em;"> 
+                        يشير اختبار التفريغ والضغط السلبي إلى استخدام جهاز اختبار إحكام الهواء لمولد فراغ أو مضخة فراغ من أجل <strong style="background: linear-gradient(transparent 50%,  #bfedfa  50%); border-radius: 4px;">سحب الهواء من داخل المنتج قيد الاختبار أو من حجرة الاختبار المحكمة</strong>، حتى يصل الضغط إلى قيمة الضغط السلبي المحددة. بعد ذلك، يتم إغلاق دائرة الاختبار ومراقبة ما إذا كان الضغط يرتفع مرة أخرى خلال الفترة الزمنية المحددة، ومن ثم تحديد ما إذا كان المنتج يعاني من تسرب استنادًا إلى تغير الضغط. 
+                    </p> 
+                    <p class="text-base" style="text-indent: 2em;"> 
+                        إذا كان المنتج محكم الإغلاق بشكل جيد، فيجب أن تظل درجة الفراغ في دائرة الاختبار مستقرة نسبيًا أثناء مرحلة الاختبار؛ <strong style="background: linear-gradient(transparent 50%,  #ffd9e4  50%); border-radius: 4px;">أما إذا كان المنتج يحتوي على فتحة تسرب، فسيدخل الهواء الخارجي إلى داخل المنتج عبر نقطة التسرب، مما يؤدي إلى انخفاض الضغط السلبي تدريجيًا وارتفاع قيمة الضغط مرة أخرى</strong>. وعندما يتجاوز مقدار تغير الضغط الحد المحدد، يقوم الجهاز بتحديد المنتج على أنه غير مؤهل. 
+                    </p> 
+                    <figure class="my-7"> 
+                        <img src="../images/services/faq/f31/vacuum-decay-test-overview.jpg" 
+                            alt="جهاز اختبار إحكام الهواء متصل بأداة تثبيت محكمة لإجراء اختبار تسرب الفراغ بالضغط السلبي لغلاف من سبائك الألومنيوم للسيارات" 
+                            width="1672" height="941" loading="eager" fetchpriority="high"> 
+                        <figcaption class="text-center text-sm text-gray-500 mt-3 mb-6"> 
+                            الشكل 1: مخطط توضيحي لعمل اختبار الضغط السلبي 
+                        </figcaption> 
+                    </figure> 
+ 
+                    <h2>2. المبدأ الأساسي لاختبار تسرب الفراغ باستخدام جهاز اختبار إحكام الهواء</h2> 
+                    <p class="text-base" style="text-indent: 2em;"> 
+                        يعتمد اختبار الضغط السلبي بشكل أساسي على تغير الضغط داخل المساحة المغلقة لتحديد نتيجة الاختبار. بعد بدء الاختبار، يقوم الجهاز أولًا بسحب الهواء من داخل المنتج حتى يصل إلى الضغط السلبي المحدد، ثم يمر بمراحل الاستقرار والاختبار وغيرها، ويجمع بيانات تغير الضغط داخل المنتج. 
+                    </p> 
+                    <p class="text-base" style="text-indent: 2em;"> 
+                        يمكن عادةً استخدام المعادلة التالية: "مقدار تغير الضغط = ضغط نهاية الاختبار - ضغط بداية الاختبار" 
+                    </p> 
+                    <p class="text-base" style="text-indent: 2em;"> 
+                        عندما يكون حجم الاختبار ووقت الاختبار والظروف البيئية مستقرة نسبيًا، فإن سرعة ارتفاع الضغط مرة أخرى تشير إلى درجة أكبر من التسرب في المنتج. ويمكن لجهاز اختبار إحكام الهواء، وفقًا لـ<strong style="background: linear-gradient(transparent 50%,  #bfedfa  50%); border-radius: 4px;">الحد الأعلى للضغط أو مقدار تغير الضغط أو معيار معدل التسرب</strong> المحدد مسبقًا، إصدار نتيجة مؤهل أو غير مؤهل تلقائيًا. 
+                    </p> 
+                    <p class="text-base" style="text-indent: 2em;"> 
+                        كما يمكن لبعض الأجهزة عالية الدقة الجمع بين حجم الاختبار للمنتج ووقت الاختبار وتغير الضغط، واستخدام الخوارزميات لحساب كمية التسرب المقابلة، مما يجعل نتائج الاختبار أكثر وضوحًا وسهولة في التقييم. 
+                    </p> 
+ 
+                    <figure class="my-7"> 
+                        <img src="../images/services/faq/f31/vacuum-decay-test-process.jpg" 
+                            alt="مخطط يوضح دائرة الهواء ومنحنى ارتفاع الضغط ومعادلة مقدار تغير الضغط ومبدأ تحديد المنتج المؤهل أو المتسرب في نظام اختبار تسرب الفراغ" 
+                            width="1672" height="941" loading="lazy"> 
+                        <figcaption class="text-center text-sm text-gray-500 mt-3 mb-6"> 
+                            الشكل 2: مخطط مبدأ اختبار تسرب الفراغ باستخدام اختبار إحكام الهواء 
+                        </figcaption> 
+                    </figure> 
+                     
+                    <h2>3. ما المنتجات المناسبة لاختبار الضغط السلبي؟</h2> 
+                    <p class="text-base" style="text-indent: 2em;"> 
+                        يناسب اختبار التفريغ بالضغط السلبي العديد من المنتجات التي تتطلب مستوى معينًا من إحكام الهواء، مثل مكونات المكانس الكهربائية التي تعمل في ظروف سحب الهواء، حيث يمكن لاستخدام اختبار الضغط السلبي أن يحاكي ظروف الاستخدام الفعلية بشكل أفضل. كما أن بعض المنتجات تتطلب مستوى أعلى من إحكام الهواء وتحتاج إلى الاختبار بالضغط الموجب والضغط السلبي معًا، مثل <a href="/solulist/carparts/engine-components.html" target="_blank" 
+                        class="text-indigo-600 font-bold hover:text-indigo-800 hover:underline transition">مكونات محركات السيارات</a>. في هذه الحالة، يتم اختبار مكونات المحرك باستخدام كل من <strong style="background: linear-gradient(transparent 50%,  #bfedfa  50%); border-radius: 4px;">الضغط الموجب والضغط السلبي</strong>. 
+                    </p> 
+                     
+                        <img src="/images/solu/car/engineComponents/product.jpg" class="h-auto rounded shadow mx-auto" alt="مكونات المحرك التي تتطلب اختبار الضغط الموجب والضغط السلبي" 
+                            loading="lazy"> 
+                        <small class="text-gray-500 inline-block text-muted text-center w-full">الشكل 3: مكونات المحرك التي تتطلب اختبار الضغط الموجب والضغط السلبي</small> 
+                     
+                    <p class="text-base mt-4" style="text-indent: 2em;"> 
+                        بالنسبة للأجزاء ذات الجدران الرقيقة والمنتجات سهلة التشوه أو قطع العمل التي لا تتحمل ضغطًا موجبًا مرتفعًا، يمكن أن يقلل استخدام اختبار الضغط السلبي من خطر تمدد المنتج أو تشوهه أو حتى تعرضه للتلف. 
+                    </p> 
+ 
+                    <h2>4. ما الأمور التي يجب الانتباه إليها عند إجراء اختبار الضغط السلبي؟</h2> 
+                    <p class="text-base" style="text-indent: 2em;"> 
+                        لا يعني اختبار تسرب الفراغ أن زيادة الضغط السلبي أو إطالة وقت الاختبار سيؤدي بالضرورة إلى نتائج أفضل. <strong style="background: linear-gradient(transparent 50%,  #bfedfa  50%); border-radius: 4px;">يجب تحديد معايير الاختبار بشكل شامل وفقًا لهيكل المنتج وحجمه الداخلي وخصائص المواد ومعيار التسرب المسموح به وإيقاع الإنتاج</strong>. 
+                    </p> 
+                    <p class="text-base" style="text-indent: 2em;"> 
+                        بالنسبة للمنتجات اللينة أو سهلة التشوه، قد يؤدي تشوه المنتج إلى تغير في الضغط، وبالتالي التأثير في نتائج الاختبار. وعادةً ما تتطلب هذه المنتجات تحسين هيكل الدعم والتثبيت في أداة الاختبار، وتحديد ضغط التفريغ ووقت الاستقرار المناسبين من خلال اختبار العينات. 
+                    </p> 
+                     
+ 
+                    <h2>5. كيف يتم اختيار الاختبار بالضغط الموجب أو الضغط السلبي؟</h2> 
+                    <p class="text-base" style="text-indent: 2em;"> 
+                        اختبار الضغط الموجب هو تطبيق الضغط من داخل المنتج إلى الخارج، وهو مناسب للمنتجات التي تتحمل ضغطًا داخليًا أثناء التشغيل الطبيعي؛ أما اختبار الضغط السلبي فيتم من خلال سحب الهواء من داخل المنتج لتكوين ضغط سلبي، مع التركيز بشكل أساسي على مراقبة ما إذا كان الهواء الخارجي يدخل إلى داخل المنتج، ولذلك فهو أكثر ملاءمة للمكونات التي تعمل في ظروف الفراغ، والأجزاء ذات الجدران الرقيقة، والمنتجات التي لا يُنصح بتعريضها لضغط موجب. 
+                    </p> 
+                    <p class="text-base" style="text-indent: 2em;"> 
+                        <strong style="background: linear-gradient(transparent 50%,  #bfedfa  50%); border-radius: 4px;">لا توجد أفضلية مطلقة بين الطريقتين، كما أنه ليس من الضروري اختيار طريقة واحدة فقط</strong>، إذ يمكن استخدام الطريقتين معًا. والمهم هو أن تكون طريقة الاختبار أقرب ما يمكن إلى اتجاه التسرب الفعلي وظروف تشغيل المنتج. وبالنسبة للمنتجات ذات الهياكل المعقدة أو متطلبات الاختبار العالية، يمكن إجراء اختبارات مقارنة باستخدام عينات مؤهلة وعينات متسربة وفتحات تسرب قياسية، ثم تحديد طريقة الاختبار المناسبة. 
+                    </p> 
+ 
+                    <figure class="my-7"> 
+                        <img src="../images/services/faq/f31/positive-vs-negative-pressure.jpg" 
+                            alt="مخطط مقارنة بين تسرب الهواء من داخل قطعة العمل إلى الخارج في اختبار الضغط الموجب ودخول الهواء الخارجي إلى داخل قطعة العمل عبر نقطة التسرب في اختبار الضغط السلبي" 
+                            width="1672" height="941" loading="lazy"> 
+                        <figcaption class="text-center text-sm text-gray-500 mt-3 mb-6"> 
+                            الشكل 4: مقارنة بين طرق اختبار الضغط الموجب والضغط السلبي 
+                        </figcaption> 
+                    </figure> 
+                    <h2>6. الخلاصة</h2> 
+                    <p class="text-base" style="text-indent: 2em;"> 
+                        لا يقتصر استخدام جهاز اختبار إحكام الهواء على اختبار التسرب بالضغط الموجب، بل يمكنه أيضًا إجراء اختبار تسرب الفراغ من خلال طريقة التفريغ بالضغط السلبي. ويكمن جوهر هذه الطريقة في إنشاء بيئة مستقرة من الضغط السلبي، ثم مراقبة ارتفاع الضغط أو تغير كمية التسرب خلال الفترة الزمنية المحددة. 
+                    </p> 
+                    <p class="text-base" style="text-indent: 2em;"> 
+                        في التطبيقات العملية، يجب تصميم معايير الاختبار وأداة التثبيت المحكمة وفقًا لهيكل المنتج وحجم الاختبار وقيمة التسرب المسموح بها وإيقاع الإنتاج. ولا يمكن الحصول على نتائج اختبار مستقرة وموثوقة وقابلة للتكرار إلا عندما تكون طريقة الاختبار ونطاق قياس الجهاز وهيكل أداة التثبيت متوافقة مع بعضها البعض. 
+                    </p> 
+                    
+                    
                 </div>
-
+                
+                
+                
+                    
+    
+                <!-- 分享和下一篇 -->
                 <footer class="mt-12 pt-8 border-t border-gray-100">
                     <div class="flex flex-wrap justify-between items-center mb-8">
                         <div class="flex items-center space-x-4">
-                            <span class="text-sm text-gray-500">مشاركة المقال:</span>
-                            <a href="https://service.weibo.com/share/share.php?url=https://www.wafubrother.com&title=This article is worth reading"
+                            <span class="text-sm text-gray-500">شارك هذا المقال:</span>
+                            <a href="https://service.weibo.com/share/share.php?url=https://www.wafubrother.cn/faq/T-art-31.html&title=This article is worth reading"
                                 target="_blank" rel="noopener noreferrer" aria-label="Share on Weibo"
                                 class="w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center hover:bg-red-600 transition-colors duration-200">
                                 <i class="fa fa-weibo"></i>
                             </a>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.wafubrother.com"
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.wafubrother.cn/faq/T-art-31.html"
                                 target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"
                                 class="w-8 h-8 rounded-full bg-blue-700 text-white flex items-center justify-center hover:bg-blue-800 transition-colors duration-200">
                                 <i class="fa fa-facebook"></i>
                             </a>
-                            <a href="mailto:?subject=Recommended Reading: This article is great&body=I found this article very valuable, check it out:%0Ahttps://www.wafubrother.com"
+                            <a href="mailto:?subject=Recommended Reading: This article is great&body=I found this article very valuable, check it out:%0Ahttps://www.wafubrother.cn/faq/T-art-31.html"
                                 aria-label="Send via Email"
                                 class="w-8 h-8 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-900 transition-colors duration-200">
                                 <i class="fa fa-envelope-o"></i>
@@ -475,32 +504,38 @@
                     </div>
                     <div class="flex flex-wrap gap-3 mb-8">
                         <span
-                            class="px-4 py-2 bg-neutral rounded-full text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">اختبار الإحكام</span>
+                            class="px-4 py-2 bg-neutral rounded-full text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">اختبار إحكام الإغلاق</span>
                         <span
-                            class="px-4 py-2 bg-neutral rounded-full text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">كشف التسرب بالهيليوم</span>
+                            class="px-4 py-2 bg-neutral rounded-full text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">الكشف عن التسرب بطيف الكتلة للهليوم</span>
                         <span
-                            class="px-4 py-2 bg-neutral rounded-full text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">تقنيات الاختبار الصناعية</span>
+                            class="px-4 py-2 bg-neutral rounded-full text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">تقنية الاختبار الصناعي</span>
                         <span
                             class="px-4 py-2 bg-neutral rounded-full text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">القياس عالي الدقة</span>
                     </div>
                     
-                    
                     <div class="flex flex-col sm:flex-row justify-between gap-6 mt-10">
-                        <a href="./T-art-15.html"
+                        <a href="./T-art-30.html"
                             class="flex items-center space-x-3 text-gray-700 hover:text-primary transition-colors duration-200">
                             <i class="fa fa-angle-left"></i>
                             <div>
                                 <p class="text-sm text-gray-500">المقال السابق</p>
-                                <p class="font-medium">تعلم مبدأ عمل <strong class="text-blue-600">أجهزة اختبار الإحكام</strong> في ثوانٍ من خلال مثال اختبار إحكام الهاتف الذكي</p>
+                                <p class="font-medium">
+                                    <!-- 下一篇标题 -->
+                                
+                        كيف يتم اختبار إحكام المنتجات <strong class="text-blue-600">المقاومة للماء</strong>؟<br/> تحليل شامل لطرق الاختبار الشائعة والإجراءات والمعدات
+                        المستخدمة
+                    
                                 </p>
                             </div>
                         </a>
-                        <!-- 下一篇 -->
-                        <a href="./T-art-19.html"
+                        <a href="./T-art-31.html"
                             class="flex items-center space-x-3 text-gray-700 hover:text-primary transition-colors duration-200 justify-end">
                             <div class="text-right">
                                 <p class="text-sm text-gray-500">المقال التالي</p>
-                                <p class="font-medium">الاختبار التقليدي مقابل <strong class="text-blue-600">الاختبار الحديث لمقاومة الماء</strong> في الهواتف الذكية</p>
+                                <p class="font-medium">تحديث مستمر!!!
+
+                                    
+                                </p>
                             </div>
                             <i class="fa fa-angle-right"></i>
                         </a>
@@ -508,6 +543,7 @@
                     
                 </footer>
             </article>
+
 
             <!-- 侧边栏 -->
             <aside class="w-full lg:w-1/3 space-y-8">
